@@ -1,0 +1,521 @@
+university_id,university_name,university_global_rank,course_program_label,parent_course_name
+704,Massachusetts Institute of Technology,2,MS in A.I.,Computer Science
+763,Stanford University,3,MS in Computer Science,Computer Science
+802,"University of California, Berkeley",4,MS in Computer Science,Computer Science
+709,Columbia University,6,MS in Computer Science - Computer Security,Computer Science
+709,Columbia University,6,MS in Computer Science,Computer Science
+771,California Institute Of Technology,7,MS in Computer Science,Computer Science
+1480,University of Washington,8,Masters in Computer Science and Engineering,Computer Science
+1480,University of Washington,8,MSc in Computer Science & Software Engineering,Computer Science
+1480,University of Washington,8,MS in Computer Science & Software Engineering,Computer Science
+1480,University of Washington,8,MS in Computer Science & Software Engineering,Computer Science
+744,Johns Hopkins University,10,MSE in Computer Science,Computer Science
+2657,Yale University,11,MS in Computer Science,Computer Science
+1858,Princeton University,11,MSE in Computer Science,Computer Science
+1858,Princeton University,11,MEng in Computer Science,Computer Science
+707,"University of California, Los Angeles",13,MS in Computer Science,Computer Science
+801,University of Pennsylvania,14,MSc(Eng) in Computer and Information Science,Computer Science
+801,University of Pennsylvania,14,Masters in Computer and Information Technology,Computer Science
+2800,The University of Chicago,15,MS in Computer Science,Computer Science
+737,"University of Michigan, Ann Arbor",17,MS in Computer Science and Engineering,Computer Science
+764,"University of California, San Diego",21,MS in Computer Science and Engineering (Thesis),Computer Science
+764,"University of California, San Diego",21,MS in Computer Science and Engineering,Computer Science
+764,"University of California, San Diego",21,MS in Computer Science And Engineering,Computer Science
+781,Cornell University,22,MEng in Computer Science,Computer Science
+781,Cornell University,22,MS in Computer Science,Computer Science
+799,Duke University,23,MS in Computer Science,Computer Science
+814,Northwestern University,24,MS in Computer Science,Computer Science
+2587,New York University,29,MS in Computer Science,Computer Science
+2587,New York University,29,MS in Computer Science (Courant),Computer Science
+2652,Washington University in St. Louis,33,MEng in Computer Science and Engineering,Computer Science
+2652,Washington University in St. Louis,33,MS in Computer Science,Computer Science
+1101,University of North Carolina at Chapel Hill,36,MS in Computer Science,Computer Science
+713,University of Texas at Austin,38,MS in Computer Science (Thesis),Computer Science
+713,University of Texas at Austin,38,MS in Computer Science (Coursework),Computer Science
+713,University of Texas at Austin,38,MS in Computer Science- Thesis,Computer Science
+794,University of Wisconsin-Madison,41,MS in Computer Science,Computer Science
+794,University of Wisconsin-Madison,41,Masters in Computer Sciences - Professional ,Computer Science
+794,University of Wisconsin-Madison,41,MS in Computer Science (duplicate),Computer Science
+821,University of Pittsburgh,43,MS in Computer Science,Computer Science
+809,Ohio State University,45,MS in Computer Science and Engineering (Thesis),Computer Science
+809,Ohio State University,45,MS in Computer Science and Engineering - Non Thesis,Computer Science
+809,Ohio State University,45,MS in Computer Science and Engineering,Computer Science
+1094,"University of Minnesota, Twin Cities",47,MS in Computer Science,Computer Science
+708,"University of California, Santa Barbara",56,MS in Computer Science,Computer Science
+701,Boston University,57,MS in Computer Science - Cyber Security,Computer Science
+701,Boston University,57,MS in Computer Science,Computer Science
+701,Boston University,57,MS in Computer Science (MET),Computer Science
+701,Boston University,57,MS in Computer Science (General),Computer Science
+749,University of Colorado Boulder,59,MS in Computer Science,Computer Science
+749,University of Colorado Boulder,59,Masters in Computer Science - Professional ,Computer Science
+712,"University of Maryland, College Park",60,MS in Computer Science,Computer Science
+711,University of Illinois Urbana-Champaign,60,MS in Computer Science,Computer Science
+711,University of Illinois Urbana-Champaign,60,Masters in Computer Science - Professional ,Computer Science
+711,University of Illinois at Urbana-Champaign,60,Masters in Computer Science,Computer Science
+868,"University of California, Davis",66,MS in Computer Science,Computer Science
+703,Georgia Institute of Technology,66,MS in Computer Science,Computer Science
+745,University of Southern California,70,MS in Computer Science - Scientists and Engineers,Computer Science
+745,University of Southern California,70,MS in Computer Science,Computer Science
+745,University of Southern California,70,Masters in Computer Science - Thesis,Computer Science
+745,University of Southern California,70,MS in Computer Science (Game Development) ,Computer Science
+745,University of Southern California,70,MS in Computer Science - Non-Thesis,Computer Science
+745,University of Southern California,70,MS in Computer Science - Software Engineering,Computer Science
+745,University of Southern California,70,MSc in Computer Science (Computer Networks),Computer Science
+2706,Emory University,71,MS in Computer Science,Computer Science
+2649,Vanderbilt University ,72,MS in Computer Science,Computer Science
+808,Pennsylvania State University,75,MS in Computer Science and Engineering,Computer Science
+808,Pennsylvania State University,75,MEng in Computer Science and Engineering,Computer Science
+808,Pennsylvania State University,75,MS in Computer Science,Computer Science
+795,"University of California, Irvine",78,Masters in Computer Science,Computer Science
+795,"University of California, Irvine",78,MSc in Computer Science,Computer Science
+2612,"University of California, Santa Cruz",81,MS in Computer Science and Engineering,Computer Science
+2612,"University of California, Santa Cruz",81,MS in Computer Science and Engineering,Computer Science
+702,Carnegie Mellon University,94,MS in Computer Vision,Computer Science
+702,Carnegie Mellon University,94,MS in Computer Science,Computer Science
+1813,University of Arizona ,97,MS in Computer Science (Thesis),Computer Science
+1813,University of Arizona ,97,MS in Computer Science - Non Thesis,Computer Science
+1856,Michigan State University,100,MS in Computer Science,Computer Science
+1856,Michigan State University,100,MS in Computer Science and Engineering,Computer Science
+2567,Brown University,101,MSc in Computer Science,Computer Science
+710,University of Florida,107,MS in Computer Science,Computer Science
+2647,University of Virginia,109,MS in Computer Science,Computer Science
+2647,University of Virginia,109,Masters in Computer Science,Computer Science
+2595,"Rutgers University, New Brunswick",113,MS in Computer Science,Computer Science
+2595,Rutgers University-New Brunswick,113,MS in Computer Science - Massive Data Analytics,Computer Science
+834,"Rutgers University, Newark",113,MS in Computer Science,Computer Science
+748,Purdue University West Lafayette,114,MS in Computer Science - Thesis,Computer Science
+748,Purdue University West Lafayette,114,MS in Computer Science - Non-Thesis,Computer Science
+861,Indiana University Bloomington,127,MS in Computer Science,Computer Science
+2594,Rice University,128,Masters in Computer Science,Computer Science
+2594,Rice University,128,BA in Computer Science,Computer Science
+706,"Texas A&M University, College Station",130,Masters in Computer Science,Computer Science
+706,"Texas A&M University, College Station",130,MS in Computer Science,Computer Science
+2638,University of Rochester,140,MS in Computer Science,Computer Science
+780,University of Massachusetts Amherst,142,MS in Computer Science,Computer Science
+820,Case Western Reserve University,142,MS in Computer Science,Computer Science
+780,University of Massachusetts Amherst,142,MS in Computer Science - Data Science,Computer Science
+1815,The University of Utah,142,MS in Computer Science,Computer Science
+782,Arizona State University,146,MS in Computer Science (Big Data Systems),Computer Science
+782,Arizona State University,146,Masters in Computer Science,Computer Science
+782,Arizona State University,146,MS in Computer Science,Computer Science
+782,Arizona State University,146,MS in Computer Science (Biomedical Informatics),Computer Science
+782,Arizona State University,146,MS in Computer Science (Media Arts and Sciences),Computer Science
+782,Arizona State University,146,MCS in Computer Science (Cybersecurity),Computer Science
+782,Arizona State University,146,Masters in Computer Science (Big Data Systems),Computer Science
+2609,University of Alabama at Birmingham,155,MS in Computer Science,Computer Science
+2611,"University of California,  Riverside",158,MS in Computer Science,Computer Science
+1859,University of Iowa,160,Masters in Computer Science,Computer Science
+735,Stony Brook University,176,MS in Computer Science,Computer Science
+735,Stony Brook University,176,MS in Computer Science- Data Science and Engineering,Computer Science
+736,"Northeastern University, Boston",177,MS in Computer Science ,Computer Science
+736,"Northeastern University, Boston",177,MS in Computer Science (Align),Computer Science
+2604,Tufts University,182,MS in Computer Science,Computer Science
+2572,Florida State University,195,MS in Computer Science - Thesis,Computer Science
+2572,Florida State University,195,MS in Computer Science - Project Option,Computer Science
+743,University of Cincinnati,202,MEng in Computer Science ,Computer Science
+743,University of Cincinnati,202,MS in Computer Science,Computer Science
+810,University of Illinois at Chicago,212,MS in Computer Science (Thesis),Computer Science
+810,University of Illinois at Chicago,212,MS in Computer Science (Project),Computer Science
+810,University of Illinois at Chicago,212,MS in Computer Science (Coursework),Computer Science
+2642,University of Tennessee at Knoxville,217,MS in Computer Science ,Computer Science
+729,"North Carolina State University, Raleigh",226,MS in Computer Science (Data Science),Computer Science
+729,"North Carolina State University, Raleigh",226,Masters in Computer Science,Computer Science
+729,"North Carolina State University, Raleigh",226,MS in Computer Science - Software Engineering,Computer Science
+864,Dartmouth College,226,MS in Computer Science,Computer Science
+818,Iowa State University,231,MS in Computer Science,Computer Science
+2634,University of Oregon,232,MS in Computer Science,Computer Science
+2625,University of Miami,236,MS in Computer Science,Computer Science
+2632,University of Notre Dame,238,MS in Computer Science and Engineering,Computer Science
+2669,Brandeis University,244,MS in Computer Science,Computer Science
+714,Virginia Tech,247,MS in Computer Science ,Computer Science
+714,Virginia Tech,247,MEng in Computer Science,Computer Science
+714,Virginia Tech,247,MS in Computer Science (Thesis),Computer Science
+714,Virginia Tech,247,MS in Computer science ( Coursework Option ),Computer Science
+2827,University of New Mexico,256,MS in Computer Science,Computer Science
+1103,The George Washington University,258,MS in Computer Science,Computer Science
+752,The University of Texas at Dallas,269,MS in Computer Science,Computer Science
+2621,"University of Maryland, Baltimore County",271,MS in Computer Science,Computer Science
+734,University at Buffalo SUNY,277,MS in Computer Science and Engineering,Computer Science
+2592,Oregon State University,277,MEng in Computer Science,Computer Science
+2592,Oregon State University,277,MS in Computer Science,Computer Science
+2592,Oregon State University,277,Masters in Computer Science,Computer Science
+2570,Colorado State University,280,MS in Computer Science,Computer Science
+2570,Colorado State University,280,MS in Computer Science,Computer Science
+2618,The University of Kansas,284,MS in Computer Science,Computer Science
+2651,Washington State University,297,MS in Computer Science,Computer Science
+2814,University of Georgia,310,MS in Computer Science (Thesis),Computer Science
+2814,University of Georgia,310,MS in Computer Science (Non-Thesis),Computer Science
+2640,University of South Florida,312,MS in Computer Science,Computer Science
+2601,Temple University,312,MS in Computer Science,Computer Science
+2716,Georgetown University,322,MS in Computer Science (Coursework),Computer Science
+2639,University of South Carolina,325,MS in Computer Science,Computer Science
+2653,Wayne State University,327,MS in Computer Science,Computer Science
+1104,University of Connecticut,332,MEng in Computer Science and Engineering,Computer Science
+1104,University of Connecticut,332,MS in Computer Science and Engineering ,Computer Science
+903,University of Delaware,336,MS in Computer Science,Computer Science
+2628,"University of Nebraska, Lincoln",349,MS in Computer Science,Computer Science
+2626,University of Mississippi,355,MS in Engineering Science - Computer Science,Computer Science
+2619,University of Kentucky,358,MS in Computer Science,Computer Science
+2812,University of Colorado at Denver,363,MS in Computer Science,Computer Science
+2664,Baylor University,365,MS in Computer Science,Computer Science
+705,Syracuse University,370,MS in Computer Science,Computer Science
+2627,"University of Missouri, Columbia",374,MS in Computer Science,Computer Science
+2616,University of Hawaii at Manoa,378,MS in Computer Science,Computer Science
+2571,Drexel University,387,MS in Computer Science,Computer Science
+2617,University of Houston,399,MS in Computer Science,Computer Science
+2650,Virginia Commonwealth University,402,MS in Computer Science,Computer Science
+2577,Kansas State University,414,MS in Computer Science,Computer Science
+2633,University of Oklahoma,414,MS in Computer Science - Non Thesis,Computer Science
+2853,Wake Forest University,419,MS in Computer Science (Thesis),Computer Science
+2799,The University of Alabama,419,MS in Computer Science,Computer Science
+3025,Florida International University,419,MS in Computer Science,Computer Science
+2580,Louisiana State University,425,MS in Computer Science,Computer Science
+2602,Texas Tech University,435,MS in Computer Science,Computer Science
+2819,"University of Massachusetts, Boston",445,MS in Computer Science,Computer Science
+915,George Mason University,453,MS in Computer Science,Computer Science
+2613,University of Central Florida,461,MS in Computer Vision,Computer Science
+2613,University of Central Florida,461,MS in Computer Science,Computer Science
+2576,Indiana University - Purdue University Indianapolis,465,MS in Computer Information Science,Computer Science
+824,The University of Texas at Arlington,471,MS in Computer Science,Computer Science
+1812,Oklahoma State University - Stillwater,478,MS in Computer Science - Non-Thesis,Computer Science
+2573,Georgia State University,483,MS in Computer Science,Computer Science
+2678,"California State University, Fresno",494,MS in Computer Science,Computer Science
+2620,University of Louisville,499,MS in Computer Science,Computer Science
+2603,The University of Vermont,499,MS in Computer Science,Computer Science
+2644,University of Texas at San Antonio,504,MS in Computer Science,Computer Science
+2848,University of Wisconsin-Milwaukee,505,MS in Computer Science,Computer Science
+2598,Southern Methodist University,507,MS in Computer Science,Computer Science
+2711,Florida Institute of Technology,525,MS in Computer Science,Computer Science
+2696,Colorado School of Mines,529,MS in Computer Science (Non-Thesis),Computer Science
+2631,University of New Hampshire,543,MS in Computer Science,Computer Science
+1158,Rensselaer Polytechnic Institute,577,MS in Computer Science,Computer Science
+2584,Montana State University at Bozeman,607,MS in Computer Science,Computer Science
+2775,San Diego State University,614,MS in Computer Science,Computer Science
+2859,West Virginia University,616,MS in Computer Science,Computer Science
+2832,University of North Texas,658,MS in Computer Science,Computer Science
+2832,University of North Texas,658,MS in Professional Computer Science,Computer Science
+2822,"University of Missouri, Kansas City",660,MS in Computer Science,Computer Science
+865,Clemson University,679,MS in Computer Science,Computer Science
+746,Rochester Institute of Technology,679,MS in Computer Science (Project Option),Computer Science
+746,Rochester Institute of Technology,679,MS in Computer Science (Thesis),Computer Science
+746,Rochester Institute of Technology,679,MS in Computer Science,Computer Science
+2578,Kent State University,683,MA in Computer Science,Computer Science
+2578,Kent State University,683,MS in Computer Science,Computer Science
+2589,Ohio University,689,MS in Computer Science,Computer Science
+3243,American University,699,MS in Computer Science,Computer Science
+2755,Northern Illinois University,703,MS in Computer Science,Computer Science
+2648,Utah State University,706,Masters in Computer Science,Computer Science
+3561,Saint Louis University,706,MS in Computer Science,Computer Science
+3169,Northern Arizona University,722,MS in Computer Science,Computer Science
+2850,University of Wyoming,726,MS in Computer Science - Non Thesis,Computer Science
+1043,Illinois Institute of Technology,736,Masters in Computer Science ,Computer Science
+1043,Illinois Institute of Technology,736,MS in Computer Science,Computer Science
+2805,"University of Alaska, Fairbanks",736,MS in Computer Science,Computer Science
+2824,University of Montana,746,MS in Computer Science,Computer Science
+2586,New Mexico State University,750,MS in Computer Science,Computer Science
+1857,Michigan Technological University,756,MS in Computer Science - Coursework ,Computer Science
+2575,Howard University,761,MCS in Computer Science - Non-Thesis,Computer Science
+2806,University of Arkansas ,774,MS in Computer Science,Computer Science
+2637,The University of Rhode Island,787,MS in Computer Science,Computer Science
+2813,University of Denver,787,MS in Computer Science,Computer Science
+2630,"University of Nevada, Reno",792,MS in Computer Science and Engineering,Computer Science
+860,University of North Carolina at Charlotte,792,MS in Computer Science,Computer Science
+2643,The University of Texas at El Paso,807,MS in Computer Science,Computer Science
+2629,"University of Nevada, Las Vegas",814,MS in Computer Science,Computer Science
+2736,Loyola University Chicago,817,MS in Computer Science,Computer Science
+2583,Missouri University of Science and Technology,822,MS in Computer Science,Computer Science
+863,New Jersey Institute of Technology,847,MS in Computer Science,Computer Science
+1099,University of Idaho,850,MS in Computer Science,Computer Science
+2579,Lehigh University,850,MEng in Computer Science,Computer Science
+2579,Lehigh University,850,MS in Computer Science,Computer Science
+2801,The University of Maine,856,MS in Computer Science,Computer Science
+2582,Mississippi State University,864,MS in Computer Science,Computer Science
+2679,"California State University, Fullerton",868,MS in Computer Science,Computer Science
+2590,Old Dominion University,873,MS in Computer Science,Computer Science
+2759,Nova Southeastern University,877,MS in Computer Science,Computer Science
+2608,University of Akron,877,MS in Computer Science,Computer Science
+2599,State University of New York at Binghamton,877,MS in Computer Science - Cybersecurity,Computer Science
+2599,State University of New York at Binghamton,877,MS in Computer Science,Computer Science
+2610,"University of Alabama, Huntsville",892,MS in Computer Science,Computer Science
+2672,California Polytechnic State University,925,MS in Computer Science,Computer Science
+3317,"California Polytechnic State University, San Luis Obispo",925,MS in Computer Science,Computer Science
+2641,University of Louisiana at Lafayette,936,MS in Computer Science,Computer Science
+2593,Portland State University,949,MS in Computer Science,Computer Science
+2645,The University of Toledo,956,MS in Engineering - Computer Science Engineering,Computer Science
+2597,"Southern Illinois University, Carbondale",971,MS in Computer Science,Computer Science
+2830,University of North Dakota,1003,MS in Computer Science,Computer Science
+2624,University of Memphis,1022,MS in Computer Science,Computer Science
+2712,Fordham University,1035,MS in Computer Science,Computer Science
+2829,University of North Carolina at Greensboro,1038,MS in Computer Science,Computer Science
+2722,Hofstra University,1054,MS in Computer Science,Computer Science
+2710,Florida Atlantic University,1056,MS in Computer Science,Computer Science
+2851,Villanova University,1070,MS in Computer Science,Computer Science
+2781,South Dakota State University,1083,MS in Computer Science (Thesis),Computer Science
+2776,San Francisco State University,1089,MS in Computer Science,Computer Science
+2753,North Dakota State University,1101,MS in Computer Science,Computer Science
+2622,University of Massachusetts Lowell,1101,MS in Computer Science,Computer Science
+2701,East Carolina University,1101,MS in Computer Science,Computer Science
+2655,Worcester Polytechnic Institute,1131,MS in Computer Science,Computer Science
+2740,Miami University,1140,MS in Computer Science,Computer Science
+2823,University of Missouri-St. Louis,1148,MS in Computer Science,Computer Science
+2682,"California State University, Northridge",1163,MS in Computer Science,Computer Science
+2568,Clarkson University,1167,MS in Computer Science,Computer Science
+2581,Marquette University,1221,MS in Computer and Information Science,Computer Science
+2862,Western Michigan University,1232,MS in Computer Science,Computer Science
+2665,Boise State University,1250,MS in Computer Science,Computer Science
+2687,Central Michigan University,1262,MS in Computer Science,Computer Science
+2600,Stevens Institute of Technology,1271,MS in Computer Science,Computer Science
+2600,Stevens Institute of Technology,1271,MS in Enterprise Cloud Computing,Computer Science
+2656,Wright State University,1304,MS in Computer Science,Computer Science
+2834,University of South Dakota,1329,MS in Computer Science,Computer Science
+2667,Bowling Green State University,1333,MS in Computer Science,Computer Science
+2569,Cleveland State University,1344,MCS in Computer Science,Computer Science
+2569,Cleveland State University,1344,Masters in Computer Information Science,Computer Science
+2700,DePaul University,1390,MS in Computer Science,Computer Science
+2680,"California State University, Long Beach",1421,MS in Computer Science,Computer Science
+2802,The University of Southern Mississippi,1432,MS in Computer Science,Computer Science
+2777,San Jose State University,1467,MS in Computer Science,Computer Science
+2777,San Jose State University,1467,Masters in Computer Science,Computer Science
+2703,East Tennessee State University,1494,MS in Computer Science,Computer Science
+2703,East Tennessee State University,1494,MS in Computer Science- Applied Computer Science,Computer Science
+3909,Auburn University at Montgomery ,,MS in Computer Science,Computer Science
+2863,Western Washington University,,MS in Computer Science,Computer Science
+2864,Wichita State University,,MS in Computer Science,Computer Science
+2835,University of Southern Maine,,MS in Computer Science,Computer Science
+4572,Weber State University,,MS in Computer Science,Computer Science
+2842,University of the District of Columbia,,MS in Computer Science,Computer Science
+2675,"California State University, Channel Islands",,MS in Computer Science,Computer Science
+2841,University of Texas at Tyler,,MS in Computer Science,Computer Science
+2658,Alabama A&M University,,MS in Computer Science,Computer Science
+3162,University of Hartford,,MS in Computer Science,Computer Science
+3286,Adelphi University,,MS in Computer Science,Computer Science
+2817,University of Illinois at Springfield,,MS in Computer Science,Computer Science
+3039,Western New England University,,MS in Computer Science,Computer Science
+2837,University of Tennessee at Chattanooga,,MS in Computer Science (Cyber Security),Computer Science
+2683,"California State University, Sacramento",,MS in Computer Science,Computer Science
+2681,"California State University, Los Angeles",,MS in Computer Science,Computer Science
+2673,"California State Polytechnic University, Pomona",,MS in Computer Science,Computer Science
+2855,"Washington State University, Vancouver",,MS in Computer Science,Computer Science
+2840,University of Texas Rio Grande Valley,,MS in Computer Science,Computer Science
+2685,"California State University, San Marcos",,MS in Computer Science,Computer Science
+2684,"California State University, San Bernardino ",,MS in Computer Science,Computer Science
+2826,University of New Haven,,MS in Computer Science,Computer Science
+2825,"University of Nebraska, Omaha",,MS in Computer Science,Computer Science
+2860,Western Illinois University,,MS in Computer Science,Computer Science
+2670,Bridgewater State University,,MS in Computer Science,Computer Science
+2844,"University of Washington, Bothell",,MS in Computer Science and Software Engineering,Computer Science
+5030,"Northeastern University, Arlington",,MS in Computer Science (Align),Computer Science
+2828,University of New Orleans,,MS in Computer Science,Computer Science
+2833,University of San Francisco,,MS in Computer Science,Computer Science
+5027,"Northeastern University, Oakland",,MS in Computer Science,Computer Science
+5027,"Northeastern University, Oakland",,MS in Computer Science (Align),Computer Science
+2837,University of Tennessee at Chattanooga,,MS in Computer Science (Thesis),Computer Science
+3029,South Dakota School of Mines and Technology,,MS in Computer Science and Engineering - Thesis,Computer Science
+2847,University of West Georgia,,MS in Applied Computer Science,Computer Science
+2846,University of West Florida,,MS in Computer Science,Computer Science
+5030,"Northeastern University, Arlington",,MS in Computer Science,Computer Science
+2815,University of Houston - Clear Lake,,MS in Computer Science - Thesis,Computer Science
+2749,"New York Institute of Technology, NY Campus",,MS in Computer Science,Computer Science
+3036,University of North Carolina Wilmington,,MS in Computer Science and Information Systems,Computer Science
+2809,University of Bridgeport,,MS in Computer Science,Computer Science
+4202,Augusta University,,MS in Computer Science,Computer Science
+2778,Seattle University,,MS in Computer Science ,Computer Science
+3155,Marist College,,MS in Computer Science - Software Development,Computer Science
+2816,University of Houston-Victoria,,MS in Computer Science,Computer Science
+2615,University of Dayton,,MS in Computer Science,Computer Science
+2807,University of Arkansas at Little Rock,,MS in Computer Science,Computer Science
+2804,Troy University,,MS in Computer Science - Advanced Artificial Intelligence,Computer Science
+2719,Governors State University,,MS in Computer Science,Computer Science
+3247,Monroe College,,MS in Computer Science,Computer Science
+2861,Western Kentucky University,,MS in Computer Science,Computer Science
+2854,"Washington State University, Tri-Cities",,MS in Computer Science,Computer Science
+2623,University of Massachusetts Dartmouth,,MS in Computer Science,Computer Science
+4640,Austin Peay State University,,MS in Computer Science and Quantitative Methods (Mathematical finance),Computer Science
+4640,Austin Peay State University,,MS in Computer Science and Quantitative Methods (Predictive Analytics),Computer Science
+4640,Austin Peay State University,,MS in Computer Science and Quantitative Methods (Cybersecurity),Computer Science
+3145,"California State University, Chico",,MS in Computer Science,Computer Science
+2733,Lawrence Technological University,,MS in Computer Science,Computer Science
+2677,"California State University, East Bay",,MS in Computer Science,Computer Science
+2794,Texas A&M University-Commerce,,MS in Computer Science,Computer Science
+3031,"The City College of New York, CCNY",,MS in Computer Science,Computer Science
+2614,University of Colorado at Colorado Springs,,MS in Computer Science,Computer Science
+2614,University of Colorado at Colorado Springs,,MEng in Computer Science - Software Engineering,Computer Science
+2767,Roosevelt University,,MS in Computer Science,Computer Science
+4034,Cornell Tech,,MEng in Computer Science,Computer Science
+2695,College of William & Mary,,MS in Computer Science,Computer Science
+2839,The University of Texas Permian Basin,,MS in Computer Science,Computer Science
+2796,Texas A&M University - Kingsville,,MS in Computer Science,Computer Science
+2804,Troy University,,Masters in Computer Science-Bioinformatics,Computer Science
+2786,"Southern Illinois University, Edwardsville",,MS in Computer Science,Computer Science
+2803,Towson University,,MS in Computer Science,Computer Science
+2769,Sacred Heart University,,MS in Computer Science and Information Technology,Computer Science
+4640,Austin Peay State University,,MS in Computer Science and Quantitative Methods (Data Management and Analysis),Computer Science
+4640,Austin Peay State University,,MS in Computer Science and Quantitative Methods: Mathematics Instruction,Computer Science
+3244,Southeast Missouri State University,,MS in Applied Computer Science,Computer Science
+2745,Monmouth University,,MS in Computer Science,Computer Science
+3742,"Missouri State University, Springfield",,MS in Computer Science,Computer Science
+3721,"Northeastern University, Seattle",,MS in Computer Science,Computer Science
+3891,Idaho State University,,MS in Computer Science,Computer Science
+2661,Arkansas State University,,MS in Computer Science,Computer Science
+2798,Texas State University,,MS in Computer Science (Non-thesis),Computer Science
+2798,Texas State University,,MS in Computer Science - Software Engineering (Non-Thesis),Computer Science
+2811,The University of Central Missouri,,MS in Computer Science,Computer Science
+3722,"Northeastern University, Silicon Valley",,MS in Computer Science,Computer Science
+3722,"Northeastern University, Silicon Valley",,MS in Computer Science (Align),Computer Science
+4581,"Northeastern University, Portland",,MS in Computer Science,Computer Science
+2795,Texas A&M University - Corpus Christi,,MS in Computer Science,Computer Science
+3118,City University of Seattle,,MS in Computer Science,Computer Science
+2693,"City University Of New York, Staten Island",,MS in Computer Science,Computer Science
+2692,"City University Of New York, Queens College",,MA in Computer Science,Computer Science
+3146,Central Connecticut State University,,MS in Computer Information Technology,Computer Science
+2646,University of Tulsa,,MS in Computer Science,Computer Science
+2797,Texas Southern University,,MS in Computer Science (Thesis),Computer Science
+2744,Mississippi College,,MS in Computer Science,Computer Science
+4948,"Concordia University, Wisconsin",,MS in Computer Science,Computer Science
+2707,Fairleigh Dickinson University,,Graduate certificate in Computer Security,Computer Science
+2739,Metropolitan State University,,MS in Computer Science,Computer Science
+3158,Purdue University Northwest,,MS in Computer Science ,Computer Science
+2746,Montclair State University,,MS in Computer Science,Computer Science
+2730,Kutztown University of Pennsylvania,,MS in Computer Science - Information Technology,Computer Science
+2728,Kennesaw State University,,MS in Computer Science,Computer Science
+2763,Pace University,,MS in Computer Science,Computer Science
+2734,"Long Island University, Brooklyn",,MS in Computer Science,Computer Science
+2694,Clark Atlanta University,,MS in Computer Science,Computer Science
+3255,Clark University,,MS in Computer Science,Computer Science
+3249,Loyola Marymount University,,MS in Computer Science,Computer Science
+2698,Dakota State University,,MS in Computer Science,Computer Science
+3253,Saginaw Valley State University,,MS in Computer Science and Information Systems,Computer Science
+4581,"Northeastern University, Portland",,MS in Computer Science (Align),Computer Science
+3151,Embry Riddle Aeronautical University,,MS in Computer Science ,Computer Science
+4584,"Rutgers University, Camden",,MS in Computer Science - Scientific Computing,Computer Science
+2709,Florida Agricultural and Mechanical University,,MS in Computer Science,Computer Science
+2723,Hood College,,MS in Computer Science,Computer Science
+3575,Lewis University,,MS in Computer Science,Computer Science
+2768,Rowan University,,MS in Computer Science,Computer Science
+2741,Middle Tennessee State University,,MS in Computer Science,Computer Science
+2793,Tennessee Technological University,,MS in Computer Science - Non Thesis,Computer Science
+4509,Tennessee State University,,MS in Computer Science,Computer Science
+2724,Indiana State University,,MS in Computer Science,Computer Science
+2732,Lamar University,,MS in Computer Science (Non-Thesis),Computer Science
+3173,St. John's University,,MS in Computer Science,Computer Science
+4156,Florida Polytechnic University,,MSc in Computer Science (Thesis ),Computer Science
+3148,Columbus State University,,MS in Applied Computer Science,Computer Science
+2666,Bowie State University,,MS in Computer Science,Computer Science
+4220,"Concordia University, Chicago",,MS in Computer Science,Computer Science
+2721,Hampton University,,MS in Computer Science,Computer Science
+3721,"Northeastern University, Seattle",,MS in Computer Science (Align),Computer Science
+2707,Fairleigh Dickinson University,,MS in Computer Science,Computer Science
+2707,Fairleigh Dickinson University,,Graduate certificate in Advanced Computer Programming,Computer Science
+2765,Prairie View A&M University,,MS in Computer Science,Computer Science
+3271,Duquesne University,,MS in Computer Science,Computer Science
+2735,Louisiana Tech University,,MS in Computer Science,Computer Science
+2708,"Fairleigh Dickinson University, Florham",,MS in Computer Science,Computer Science
+2757,Northwest Missouri State University,,MS in Applied Computer Science,Computer Science
+3242,University of Central Oklahoma,,MS in Computer Science,Computer Science
+2752,North Carolina Agricultural and Technical State University,,MS in Computer Science,Computer Science
+2843,University of the Pacific,,MS in Computer Science,Computer Science
+2699,Delaware State University,,MS in Computer Science,Computer Science
+2660,Appalachian State University,,MS in Computer Science,Computer Science
+2836,"University of Southern Mississippi, Gulf Coast",,MS in Computer Science,Computer Science
+2858,West Chester University of Pennsylvania,,MS in Computer Science,Computer Science
+2791,State University of New York (Albany),,MS in Computer Science,Computer Science
+2764,Penn State Harrisburg,,MS in Computer Science,Computer Science
+2845,"University of Washington, Tacoma",,MS in Computer Science and Systems,Computer Science
+3774,Harrisburg University of Science and Technology,,MS in Computer Information Sciences,Computer Science
+2676,"California State University, Dominguez Hills",,MS in Computer Science,Computer Science
+2818,University of Maryland Eastern Shore,,MS in Applied Computer Science,Computer Science
+2783,Southern Adventist University,,MS in Computer Science,Computer Science
+3525,International Technological University,,MS in Computer Science,Computer Science
+2761,Oklahoma City University,,MS in Computer Science,Computer Science
+2726,Jackson State University,,MS in Computer Science,Computer Science
+2789,Southern University and A&M College,,MS in Computer Science,Computer Science
+2790,St. Cloud State University,,MS in Computer Science,Computer Science
+5351,"Northeastern University, Miami",,MS in Computer Science   ,Computer Science
+4078,Purdue University Fort Wayne,,MS in Computer Science,Computer Science
+5351,"Northeastern University, Miami",,MS in Computer Science (Align),Computer Science
+5351,"Northeastern University, Miami",,MS in Computer Science   ,Computer Science
+5351,"Northeastern University, Miami",,MS in Computer Science   ,Computer Science
+5351,"Northeastern University, Miami",,MS in Computer Science   ,Computer Science
+4203,Mercy University,,MS in Computer Science,Computer Science
+3119,State University of New York Polytechnic Institute,,MS in Computer Science,Computer Science
+2771,"St. Marys University, Texas",,MS in Computer Science,Computer Science
+3725,Oklahoma Christian University,,MS in Computer Science,Computer Science
+4437,Texas A&M University - San Antonio,,MS in Computer Science,Computer Science
+4184,Saint Leo University,,MS in Computer Science,Computer Science
+5301,San Francisco Bay University,,MS in Computer Science,Computer Science
+3856,Westcliff University,,MS in Computer Science,Computer Science
+2690,"City University Of New York, Brooklyn College",,MS in Computer Science,Computer Science
+5077,Charleston Southern University,,MS in Computer Science,Computer Science
+2750,"New York Institute of Technology, Old Westbury",,MS in Computer Science,Computer Science
+3167,University of North America,,MS in Computer Science,Computer Science
+2792,State University of New York at New Paltz,,MS in Computer Science,Computer Science
+2585,New Mexico Institute of Mining and Technology,,MS in Computer Science,Computer Science
+2766,Rivier University,,MS in Computer Science,Computer Science
+2688,Chicago State University ,,MS in Computer Science,Computer Science
+2705,Eastern Washington University,,MS in Computer Science,Computer Science
+3802,Fitchburg State University,,MS in Computer Science,Computer Science
+2702,East Stroudsburg University,,MS in Computer Science (Non-Thesis),Computer Science
+3152,"Fontbonne University, St Louis",,MS in Computer Science,Computer Science
+3549,Iona College,,MS in Computer Science,Computer Science
+2754,Northeastern Illinois University,,MS in Computer Science,Computer Science
+2821,University of Minnesota Duluth,,MS in Computer Science,Computer Science
+3285,The College of Saint Rose,,MS in Computer Science,Computer Science
+2779,Shippensburg University of Pennsylvania,,MS in Computer Science,Computer Science
+5042,Oral Roberts University,,MS in Computer Science (Computer Science),Computer Science
+5042,Oral Roberts University,,MS in Computer Science (Data Science),Computer Science
+3889,West Virginia State University,,MS in Computer Science,Computer Science
+5077,Charleston Southern University,,MS in Computer Science,Computer Science
+5077,Charleston Southern University,,MS in Computer Science,Computer Science
+5077,Charleston Southern University,,MS in Computer Science,Computer Science
+5077,Charleston Southern University,,MS in Computer Science,Computer Science
+5077,Charleston Southern University,,MS in Computer Science,Computer Science
+5077,Charleston Southern University,,MS in Computer Science,Computer Science
+3254,"California State University, Bakersfield",,MS in Computer Science,Computer Science
+4075,NYU Tandon School of Engineering,,MS in Computer Science,Computer Science
+3242,University of Central Oklahoma,,MS in Computer Science ,Computer Science
+5208,Avila University,,MS in Computer Science Management,Computer Science
+3897,Virginia State University,,MS in Computer Science - Non-Thesis,Computer Science
+2778,Seattle University,,Masters in Computer Science,Computer Science
+2747,National University,,MS in Computer Science,Computer Science
+2727,James Madison University,,MS in Computer Science,Computer Science
+3339,Trinity University,,MSc in Computer Science - Intelligent Systems,Computer Science
+2704,Eastern Michigan University,,MS in Computer Science,Computer Science
+2742,Midwestern State University,,MS in Computer Science,Computer Science
+2714,Frostburg State University,,MS in Applied Computer Science,Computer Science
+2689,Christopher Newport University,,Masters in Applied Physics and Computer Science,Computer Science
+2691,"City University Of New York, Lehman College",,MS in Computer Science,Computer Science
+4224,Angelo State University,,MS in Computer Science,Computer Science
+2787,Southern Oregon University,,Masters in Applied Computer Science,Computer Science
+2756,Northern Kentucky University,,MS in Computer Science,Computer Science
+5042,Oral Roberts University,,MSc in Computer Science (Data Science),Computer Science
+5042,Oral Roberts University,,MSc in Computer Science (Data Science),Computer Science
+5042,Oral Roberts University,,MSc in Computer Science (Data Science),Computer Science
+2737,Maharishi University of Management,,MS in Computer Science,Computer Science
+3807,"New York Institute of Technology, Vancouver",,MS in Computer Science,Computer Science
+3306,Penn State Great Valley,,MEng in Computer Science and Engineering,Computer Science
+3306,Penn State Great Valley,,MS in Computer Science and Engineering,Computer Science
+3529,North Carolina Central University,,Masters in Computer Science,Computer Science
+2733,Lawrence Technological University,,Masters in Computer Science,Computer Science
+3900,"University of the Pacific, San Francisco",,MS in Computer Science,Computer Science
+2838,University of Texas - Pan American,,MS in Computer Science,Computer Science
+2734,"Long Island University, Brooklyn",,MS in Computer Science (Blended) ,Computer Science
+2734,"Long Island University, Brooklyn",,MS in Computer Science (Blended) ,Computer Science
+2734,"Long Island University, Brooklyn",,MS in Computer Science,Computer Science
+2734,"Long Island University, Brooklyn",,MS in Computer Science (Blended) ,Computer Science
+2676,"California State University, Dominguez Hills",,MS in Computer Science,Computer Science
+4948,"Concordia University, Wisconsin",,MS in Computer Science,Computer Science
+4948,"Concordia University, Wisconsin",,MS in Computer Science,Computer Science
+3721,Northeastern University-Seattle,,MS in Computer Science,Computer Science
+3721,Northeastern University-Seattle,,MS in Computer Science,Computer Science
+2751,Norfolk State University,,MS in Computer Science,Computer Science
+3039,Western New England University,,MS in Computer Science,Computer Science
+4643,Eastern Kentucky University,,MS in Computer Science,Computer Science
+3242,University of Central Oklahoma,,Masters in Computational Science - Computer Science,Computer Science
+4075,NYU Tandon School of Engineering,,Diploma in Computer Science,Computer Science
+2845,"University of Washington, Tacoma",,MS in Computer Science and Systems,Computer Science
+4315,University of St. Thomas,,B.S in Computer Science,Computer Science
+2720,Grand Valley State University,,MS in Applied Computer Science,Computer Science
+3150,Concordia University - Ann Arbor,,MS in Computer Science,Computer Science
+2697,Colorado Technical University,,MS in Computer Science,Computer Science
+2748,New Mexico Highlands University,,MS in Media Arts and Computer Science- Computer Science,Computer Science
+3158,Purdue University Northwest,,MS in Computer Science,Computer Science
