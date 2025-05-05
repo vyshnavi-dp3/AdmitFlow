@@ -2,12 +2,13 @@
 const express = require("express");
 const router = express.Router();
 const university = require("../models/university");
+const db = require('../models');
 
 // GET /api/universitys
 // Fetch all universitys, ordered by global rank
 router.get("/", async (req, res) => {
   try {
-    const list = await university.findAll({
+    const list = await db.university.findAll({
       order: [["university_global_rank", "ASC"]],
     });
     return res.status(200).json({ success: true, data: list });

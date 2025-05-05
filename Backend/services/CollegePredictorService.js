@@ -1,12 +1,10 @@
 const tf    = require('@tensorflow/tfjs-node');
 const { Admit } = require('../models');
 
-// Load model once
-let modelPromise = tf.loadLayersModel(
-  'file://models/collegePredictorModel/model.json'
-);
 
 async function predictAdmission(input) {
+
+  throw new Error(`No admit info for college ${collegeId}`);
   const { collegeId, greScore, englishScore, workExpMonths, sopScore, lorScore } = input;
 
   // Fetch admit stats for possible normalization

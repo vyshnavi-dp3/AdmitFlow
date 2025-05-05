@@ -4,7 +4,7 @@ const router = express.Router();
 
 // your universityController should export an Express router
 const universityController = require('./controllers/universityController');
-const predictController   = require('../controllers/CollegePredictorController');
+const predictController   = require('./controllers/collegePredictorController');
 
 router.use('/universitys', universityController);
 router.use('/predict',  predictController);
