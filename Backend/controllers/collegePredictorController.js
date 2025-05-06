@@ -12,6 +12,7 @@ router.post('/', async (req, res) => {
     workExpMonths,
     sopScore,
     lorScore,
+    noOfPapers
   } = req.body;
 
   // Validate fields
@@ -22,6 +23,7 @@ router.post('/', async (req, res) => {
     typeof score         !== 'number' ||
     typeof workExpMonths !== 'number' ||
     typeof sopScore      !== 'number' ||
+    typeof noOfPapers    !== 'number' ||
     typeof lorScore      !== 'number'
   ) {
     return res.status(400).json({ error: 'Invalid request body' });
@@ -41,6 +43,7 @@ router.post('/', async (req, res) => {
       workExpMonths,
       sopScore,
       lorScore,
+      noOfPapers
     });
     return res.status(200).json({ success: true, data: prediction });
   } catch (err) {

@@ -10,7 +10,6 @@ require('dotenv').config();
 
 const db        = require('../models');
 const sequelize = db.sequelize;
-const College   = db.College;
 
 async function loadCollegesFromCSV(filePath) {
   // 1) Ensure DB connection and table exist
