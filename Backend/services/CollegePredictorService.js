@@ -1,10 +1,10 @@
 // services/CollegePredictorService.js
 
-// 0) Seed Math.random globally
+// Ensure deterministic Math.random
 const seedrandom = require('seedrandom');
 seedrandom('my-fixed-seed', { global: true });
 
-const tf    = require('@tensorflow/tfjs');    
+const tf    = require('@tensorflow/tfjs');    // pure-JS TF
 const { Op } = require('sequelize');
 const db    = require('../models');
 
@@ -20,14 +20,14 @@ async function predictAdmission(input) {
     noOfPapers
   } = input;
 
-  // 1) Pick English field
+  // 1) Choose English field
   let engField;
   if (scoreType === 'toefl') engField = 'toefl_score';
   else if (scoreType === 'ielts') engField = 'ielts_score';
   else throw new Error('scoreType must be "ielts" or "toefl"');
   const engScore = score;
 
-  // 2) Fetch historical records
+  // 2) Fetch history
   const rawRows = await db.admit.findAll({
     where: {
       university_id: collegeId,
@@ -42,12 +42,12 @@ async function predictAdmission(input) {
     ]
   });
 
-  // 3) Extract and filter by application_status (6=admit,7=reject)
-  const rows = rawRows.flatMap(r => {
+  // 3) Extract & filter records by matching application_status (6=admit,7=reject)
+  const records = rawRows.flatMap(r => {
     const meta = r.metadata || {};
     let apps = Array.isArray(meta.university_applications)
-             ? meta.university_applications
-             : meta.ranks_and_metadata?.total_profile?.university_applications;
+               ? meta.university_applications
+               : meta.ranks_and_metadata?.total_profile?.university_applications;
     if (!Array.isArray(apps)) return [];
     const app = apps.find(a => Number(a.university_id) === collegeId);
     if (!app) return [];
@@ -61,52 +61,53 @@ async function predictAdmission(input) {
       admit:  status === 6 ? 1 : 0
     }];
   });
-  if (!rows.length) {
-    throw new Error(`No valid history for college ${collegeId}`);
+
+  if (!records.length) {
+    throw new Error(`No valid records for college ${collegeId}`);
   }
 
-  // 4) Compute normalization maxes
+  // 4) Compute max values (including input)
   let maxGre    = greScore,
       maxEng    = engScore,
       maxExp    = workExpMonths,
       maxPapers = noOfPapers;
-  rows.forEach(r => {
+  records.forEach(r => {
     if (r.gre    > maxGre)    maxGre    = r.gre;
     if (r.eng    > maxEng)    maxEng    = r.eng;
     if (r.exp    > maxExp)    maxExp    = r.exp;
     if (r.papers > maxPapers) maxPapers = r.papers;
   });
 
-  // 5) Build training tensors (4 features)
-  const featureMatrix = rows.map(r => [
+  // 5) Build training tensors
+  const features = records.map(r => [
     r.gre    / maxGre,
     r.eng    / maxEng,
     r.exp    / maxExp,
     r.papers / maxPapers
   ]);
-  const labelMatrix = rows.map(r => [ r.admit ]);
+  const labels = records.map(r => [ r.admit ]);
 
-  const xTrain = tf.tensor2d(featureMatrix);
-  const yTrain = tf.tensor2d(labelMatrix);
+  const xTrain = tf.tensor2d(features);
+  const yTrain = tf.tensor2d(labels);
 
-  // 6) Define model with fixed-seed initializers
+  // 6) Build model with fixed seed
   const seed = 42;
-  const kernelInit = tf.initializers.glorotUniform({ seed });
-  const biasInit   = tf.initializers.zeros();
+  const init = tf.initializers.glorotUniform({ seed });
+  const zeros = tf.initializers.zeros();
 
   const model = tf.sequential();
   model.add(tf.layers.dense({
     units:             16,
     activation:        'relu',
     inputShape:       [4],
-    kernelInitializer: kernelInit,
-    biasInitializer:   biasInit
+    kernelInitializer: init,
+    biasInitializer:   zeros
   }));
   model.add(tf.layers.dense({
     units:             1,
     activation:        'sigmoid',
-    kernelInitializer: kernelInit,
-    biasInitializer:   biasInit
+    kernelInitializer: init,
+    biasInitializer:   zeros
   }));
   model.compile({
     optimizer: tf.train.adam(),
@@ -114,11 +115,11 @@ async function predictAdmission(input) {
     metrics:   ['accuracy']
   });
 
-  // 7) Train with shuffle: false
+  // 7) Train without shuffling
   await model.fit(xTrain, yTrain, {
-    epochs:   20,
-    shuffle:  false,
-    verbose:  0
+    epochs:  20,
+    shuffle: false,
+    verbose: 0
   });
 
   // 8) Predict
@@ -130,15 +131,20 @@ async function predictAdmission(input) {
   ]]);
   const [modelProb] = await model.predict(inputTensor).data();
 
-  // 9) Combine with SOP/LOR (30% weight)
+  // 9) Combine with SOP/LOR (30%)
   const maxExternalScore = 10;
-  const externalAvg = ((sopScore / maxExternalScore) + (lorScore / maxExternalScore)) / 2;
-  const finalProbability = 0.7 * modelProb + 0.3 * externalAvg;
+  const extAvg = ((sopScore / maxExternalScore) + (lorScore / maxExternalScore)) / 2;
+  const finalProb = 0.7 * modelProb + 0.3 * extAvg;
 
   // 10) Cleanup
   tf.dispose([xTrain, yTrain, inputTensor]);
   model.dispose();
-  return { probability: finalProbability };
+
+  // Return both the final probability and all training records
+  return {
+    probability: finalProb,
+    trainingRecords: records
+  };
 }
 
 module.exports = { predictAdmission };
