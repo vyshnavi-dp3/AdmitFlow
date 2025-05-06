@@ -29,17 +29,18 @@ router.post('/', async (req, res) => {
     return res.status(400).json({ error: 'Invalid request body' });
   }
 
+  console.log("----->",scoreType)
   if (!['ielts','toefl'].includes(scoreType.toLowerCase())) {
     return res.status(400).json({ error: "scoreType must be 'ielts' or 'toefl'" });
   }
 
-  const englishScore = score;
 
   try {
     const prediction = await predictorService.predictAdmission({
       collegeId,
       greScore,
-      englishScore,
+      scoreType,
+      score,
       workExpMonths,
       sopScore,
       lorScore,

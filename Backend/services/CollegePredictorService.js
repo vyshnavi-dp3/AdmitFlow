@@ -1,106 +1,144 @@
 // services/CollegePredictorService.js
 
-const tf    = require('@tensorflow/tfjs');    // <-- pure JS runtime
+// 0) Seed Math.random globally
+const seedrandom = require('seedrandom');
+seedrandom('my-fixed-seed', { global: true });
+
+const tf    = require('@tensorflow/tfjs');    
 const { Op } = require('sequelize');
-const { Admit } = require('../models');
+const db    = require('../models');
 
 async function predictAdmission(input) {
   const {
     collegeId,
     greScore,
-    toeflScore,
-    ieltsScore,
+    scoreType,     // 'ielts' or 'toefl'
+    score,         // the corresponding English score
     workExpMonths,
+    sopScore,
+    lorScore,
     noOfPapers
   } = input;
 
-  // 1) Choose which English field to use
-  let engField, engScore;
-  if (toeflScore != null) {
-    engField = 'toefl_score';
-    engScore = toeflScore;
-  } else if (ieltsScore != null) {
-    engField = 'ielts_score';
-    engScore = ieltsScore;
-  } else {
-    throw new Error('Please provide either toeflScore or ieltsScore');
-  }
+  // 1) Pick English field
+  let engField;
+  if (scoreType === 'toefl') engField = 'toefl_score';
+  else if (scoreType === 'ielts') engField = 'ielts_score';
+  else throw new Error('scoreType must be "ielts" or "toefl"');
+  const engScore = score;
 
-  // 2) Fetch admits for this college where that field is non-null
-  const rows = await Admit.findAll({
+  // 2) Fetch historical records
+  const rawRows = await db.admit.findAll({
     where: {
       university_id: collegeId,
-      [engField]: { [Op.ne]: null }
+      [engField]:    { [Op.ne]: null }
     },
     attributes: [
       'gre_score',
       engField,
       'total_work_experience_in_months',
       'technical_papers_count',
-      'admitDecision'  // 0 or 1
+      'metadata'
     ]
   });
+
+  // 3) Extract and filter by application_status (6=admit,7=reject)
+  const rows = rawRows.flatMap(r => {
+    const meta = r.metadata || {};
+    let apps = Array.isArray(meta.university_applications)
+             ? meta.university_applications
+             : meta.ranks_and_metadata?.total_profile?.university_applications;
+    if (!Array.isArray(apps)) return [];
+    const app = apps.find(a => Number(a.university_id) === collegeId);
+    if (!app) return [];
+    const status = app.application_status;
+    if (status !== 6 && status !== 7) return [];
+    return [{
+      gre:    r.gre_score,
+      eng:    r[engField],
+      exp:    r.total_work_experience_in_months,
+      papers: r.technical_papers_count,
+      admit:  status === 6 ? 1 : 0
+    }];
+  });
   if (!rows.length) {
-    throw new Error(`No data for college ${collegeId} with ${engField}`);
+    throw new Error(`No valid history for college ${collegeId}`);
   }
 
-  // 3) Compute maxes for normalization
+  // 4) Compute normalization maxes
   let maxGre    = greScore,
       maxEng    = engScore,
       maxExp    = workExpMonths,
       maxPapers = noOfPapers;
   rows.forEach(r => {
-    if (r.gre_score > maxGre) maxGre = r.gre_score;
-    if (r[engField] > maxEng) maxEng = r[engField];
-    if (r.total_work_experience_in_months > maxExp)
-      maxExp = r.total_work_experience_in_months;
-    if (r.technical_papers_count > maxPapers)
-      maxPapers = r.technical_papers_count;
+    if (r.gre    > maxGre)    maxGre    = r.gre;
+    if (r.eng    > maxEng)    maxEng    = r.eng;
+    if (r.exp    > maxExp)    maxExp    = r.exp;
+    if (r.papers > maxPapers) maxPapers = r.papers;
   });
 
-  // 4) Build training tensors
-  const features = rows.map(r => [
-    r.gre_score / maxGre,
-    r[engField] / maxEng,
-    r.total_work_experience_in_months / maxExp,
-    r.technical_papers_count / maxPapers
+  // 5) Build training tensors (4 features)
+  const featureMatrix = rows.map(r => [
+    r.gre    / maxGre,
+    r.eng    / maxEng,
+    r.exp    / maxExp,
+    r.papers / maxPapers
   ]);
-  const labels   = rows.map(r => [r.admitDecision]);
+  const labelMatrix = rows.map(r => [ r.admit ]);
 
-  const xTrain = tf.tensor2d(features);
-  const yTrain = tf.tensor2d(labels);
+  const xTrain = tf.tensor2d(featureMatrix);
+  const yTrain = tf.tensor2d(labelMatrix);
 
-  // 5) Build & compile a tiny model
+  // 6) Define model with fixed-seed initializers
+  const seed = 42;
+  const kernelInit = tf.initializers.glorotUniform({ seed });
+  const biasInit   = tf.initializers.zeros();
+
   const model = tf.sequential();
-  model.add(tf.layers.dense({ units:16, activation:'relu',  inputShape:[4] }));
-  model.add(tf.layers.dense({ units:1,  activation:'sigmoid' }));
+  model.add(tf.layers.dense({
+    units:             16,
+    activation:        'relu',
+    inputShape:       [4],
+    kernelInitializer: kernelInit,
+    biasInitializer:   biasInit
+  }));
+  model.add(tf.layers.dense({
+    units:             1,
+    activation:        'sigmoid',
+    kernelInitializer: kernelInit,
+    biasInitializer:   biasInit
+  }));
   model.compile({
     optimizer: tf.train.adam(),
-    loss: 'binaryCrossentropy',
-    metrics: ['accuracy']
+    loss:      'binaryCrossentropy',
+    metrics:   ['accuracy']
   });
 
-  // 6) Train on the fly
+  // 7) Train with shuffle: false
   await model.fit(xTrain, yTrain, {
-    epochs: 20,
-    shuffle: true,
-    verbose: 0
+    epochs:   20,
+    shuffle:  false,
+    verbose:  0
   });
 
-  // 7) Predict your single input
+  // 8) Predict
   const inputTensor = tf.tensor2d([[
-    greScore / maxGre,
-    engScore / maxEng,
+    greScore      / maxGre,
+    engScore      / maxEng,
     workExpMonths / maxExp,
-    noOfPapers / maxPapers
+    noOfPapers    / maxPapers
   ]]);
-  const outputTensor = model.predict(inputTensor);
-  const [probability] = await outputTensor.data();
+  const [modelProb] = await model.predict(inputTensor).data();
 
-  // 8) Cleanup
-  tf.dispose([xTrain, yTrain, inputTensor, outputTensor, model]);
+  // 9) Combine with SOP/LOR (30% weight)
+  const maxExternalScore = 10;
+  const externalAvg = ((sopScore / maxExternalScore) + (lorScore / maxExternalScore)) / 2;
+  const finalProbability = 0.7 * modelProb + 0.3 * externalAvg;
 
-  return { probability };
+  // 10) Cleanup
+  tf.dispose([xTrain, yTrain, inputTensor]);
+  model.dispose();
+  return { probability: finalProbability };
 }
 
 module.exports = { predictAdmission };
