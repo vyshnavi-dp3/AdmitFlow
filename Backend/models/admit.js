@@ -11,14 +11,6 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-      university_name: {
-        type: DataTypes.STRING(255),
-        allowNull: false,
-      },
-      username: {
-        type: DataTypes.STRING(100),
-        allowNull: false,
-      },
       ielts_score: {
         type: DataTypes.FLOAT,
         allowNull: true,
@@ -36,9 +28,9 @@ module.exports = (sequelize) => {
         allowNull: true,
         defaultValue: 0,
       },
-      work_experience: {
-        type: DataTypes.STRING(255),
-        allowNull: true,
+      application_status:  {
+        type: DataTypes.INTEGER,
+        allowNull: false,
       },
       total_work_experience_in_months: {
         type: DataTypes.INTEGER,
