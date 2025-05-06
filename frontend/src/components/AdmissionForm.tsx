@@ -50,13 +50,15 @@ const AdmissionForm: React.FC<AdmissionFormProps> = ({ university, onSubmit }) =
     e.preventDefault();
     
     const submitData = {
-      ...formData,
+      collegeId: university.university_id,
       greScore: parseInt(formData.greScore),
+      scoreType: formData.scoreType,
       score: parseInt(formData.score),
       workExpMonths: parseInt(formData.workExpMonths),
       researchPapers: parseInt(formData.researchPapers),
-      sop: sopFile,
-      lor: lorFile
+      sopScore: 8, // Random score as requested
+      lorScore: 9, // Random score as requested
+      noOfPapers: parseInt(formData.researchPapers)
     };
 
     onSubmit(submitData);
