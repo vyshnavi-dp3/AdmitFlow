@@ -1,0 +1,211 @@
+name,city,state,url,ranking,schoolData,university_id
+Carnegie Mellon University,Pittsburgh,PA,https://www.usnews.com/best-graduate-schools/top-science-schools/carnegie-mellon-university-211440,1,4.9,702.0
+Massachusetts Institute of Technology,Cambridge,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/massachusetts-institute-of-technology-166683,1,4.9,704.0
+Stanford University,Stanford,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/stanford-university-243744,1,4.9,763.0
+University of California--Berkeley,Berkeley,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-berkeley-110635,1,4.9,802.0
+University of Illinois--Urbana-Champaign,Urbana,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-illinois-at-urbana-champaign-145637,5,4.7,711.0
+Cornell University,Ithaca,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/cornell-university-190415,6,4.6,781.0
+Georgia Institute of Technology,Atlanta,GA,https://www.usnews.com/best-graduate-schools/top-science-schools/georgia-institute-of-technology-139755,7,4.5,703.0
+University of Texas--Austin,Austin,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/the-university-of-texas-at-austin-228778,7,4.5,713.0
+University of Washington,Seattle,WA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-washington-seattle-campus-236948,7,4.5,1480.0
+Princeton University,Princeton,NJ,https://www.usnews.com/best-graduate-schools/top-science-schools/princeton-university-186131,10,4.4,1858.0
+University of Michigan--Ann Arbor,Ann Arbor,MI,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-michigan-ann-arbor-170976,10,4.4,737.0
+Columbia University,New York,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/columbia-university-190150,12,4.3,709.0
+California Institute of Technology,Pasadena,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/california-institute-of-technology-110404,13,4.2,771.0
+University of California--Los Angeles,Los Angeles,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-los-angeles-110662,13,4.2,707.0
+University of California--San Diego,La Jolla,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-san-diego-110680,13,4.2,764.0
+University of Wisconsin--Madison,Madison,WI,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-wisconsin-madison-240444,13,4.2,794.0
+Harvard University,Cambridge,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/harvard-university-166027,17,4.1,2574.0
+University of Maryland--College Park,College Park,MD,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-maryland-college-park-163286,17,4.1,712.0
+Purdue University--West Lafayette,West Lafayette,IN,https://www.usnews.com/best-graduate-schools/top-science-schools/purdue-university-main-campus-243780,19,4.0,748.0
+University of Pennsylvania,Philadelphia,PA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-pennsylvania-215062,19,4.0,801.0
+Duke University,Durham,NC,https://www.usnews.com/best-graduate-schools/top-science-schools/duke-university-198419,21,3.9,799.0
+University of Southern California,Los Angeles,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-southern-california-123961,21,3.9,745.0
+Yale University,New Haven,CT,https://www.usnews.com/best-graduate-schools/top-science-schools/yale-university-130794,21,3.9,2657.0
+Johns Hopkins University,Baltimore,MD,https://www.usnews.com/best-graduate-schools/top-science-schools/johns-hopkins-university-162928,24,3.8,744.0
+University of Chicago,Chicago,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-chicago-144050,24,3.8,2800.0
+University of Massachusetts--Amherst,Amherst,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-massachusetts-amherst-166629,24,3.8,780.0
+Brown University,Providence,RI,https://www.usnews.com/best-graduate-schools/top-science-schools/brown-university-217156,27,3.7,2567.0
+New York University,New York,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/new-york-university-193900,27,3.7,2587.0
+Northeastern University,Boston,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/northeastern-university-167358,27,3.7,4169.0
+Northwestern University,Evanston,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/northwestern-university-147767,27,3.7,814.0
+Ohio State University,Columbus,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/ohio-state-university-columbus-204796,27,3.7,809.0
+Rice University,Houston,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/rice-university-227757,27,3.7,2594.0
+University of California--Irvine,Irvine,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-irvine-110653,27,3.7,795.0
+University of California--Santa Barbara,Santa Barbara,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-santa-barbara-110705,27,3.7,708.0
+University of North Carolina--Chapel Hill,Chapel Hill,NC,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-north-carolina-chapel-hill-199120,27,3.7,1101.0
+University of California--Davis,Davis,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-davis-110644,36,3.6,868.0
+University of Minnesota--Twin Cities,Minneapolis,MN,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-minnesota-twin-cities-174066,36,3.6,1094.0
+University of Virginia,Charlottesville,VA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-virginia-main-campus-234076,36,3.6,2647.0
+Virginia Tech,Blacksburg,VA,https://www.usnews.com/best-graduate-schools/top-science-schools/virginia-polytechnic-institute-and-state-university-233921,36,3.6,714.0
+Pennsylvania State University--University Park,University Park,PA,https://www.usnews.com/best-graduate-schools/top-science-schools/pennsylvania-state-university-main-campus-214777,40,3.5,
+University of Colorado--Boulder,Boulder,CO,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-colorado-at-boulder-126614,40,3.5,749.0
+"Rutgers, The State University of New Jersey--New Brunswick",Piscataway,NJ,https://www.usnews.com/best-graduate-schools/top-science-schools/rutgers-university-186380,42,3.4,
+University of Utah,Salt Lake City ,UT,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-utah-230764,42,3.4,1815.0
+Washington University in St. Louis,St. Louis,MO,https://www.usnews.com/best-graduate-schools/top-science-schools/washington-university-in-st-louis-179867,42,3.4,2652.0
+Arizona State University,Tempe,AZ,https://www.usnews.com/best-graduate-schools/top-science-schools/arizona-state-university-104151,45,3.3,782.0
+Boston University,Boston,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/boston-university-164988,45,3.3,701.0
+Stony Brook University--SUNY,Stony Brook,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/stony-brook-university-196097,45,3.3,735.0
+Texas A&M University--College Station,College Station,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/texas-a-m-university-228723,45,3.3,706.0
+University of Florida,Gainesville,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-florida-134130,45,3.3,710.0
+Dartmouth College,Hanover,NH,https://www.usnews.com/best-graduate-schools/top-science-schools/dartmouth-college-182670,50,3.2,864.0
+Indiana University--Bloomington,Bloomington,IN,https://www.usnews.com/best-graduate-schools/top-science-schools/indiana-university-bloomington-151351,50,3.2,861.0
+North Carolina State University,Raleigh,NC,https://www.usnews.com/best-graduate-schools/top-science-schools/north-carolina-state-university-raleigh-199193,50,3.2,3529.0
+University of California--Santa Cruz,Santa Cruz,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-santa-cruz-110714,50,3.2,2612.0
+University of Rochester,Rochester,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-rochester-195030,50,3.2,2638.0
+Vanderbilt University,Nashville,TN,https://www.usnews.com/best-graduate-schools/top-science-schools/vanderbilt-university-221999,50,3.2,2649.0
+Michigan State University,East Lansing,MI,https://www.usnews.com/best-graduate-schools/top-science-schools/michigan-state-university-171100,56,3.1,1856.0
+Tufts University,Medford,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/tufts-university-168148,56,3.1,2604.0
+University of California--Riverside,Riverside,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-riverside-110671,56,3.1,2611.0
+University of Notre Dame,Notre Dame,IN,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-notre-dame-152080,56,3.1,2632.0
+University of Pittsburgh,Pittsburgh,PA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-pittsburgh-pittsburgh-campus-215293,56,3.1,821.0
+University at Buffalo--SUNY,Buffalo,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/university-at-buffalo-196088,61,3.0,734.0
+University of Arizona,Tucson,AZ,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-arizona-104179,61,3.0,1813.0
+University of Illinois--Chicago,Chicago,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-illinois-chicago-145600,61,3.0,810.0
+Emory University,Atlanta,GA,https://www.usnews.com/best-graduate-schools/top-science-schools/emory-university-139658,64,2.9,2706.0
+George Mason University,Fairfax,VA,https://www.usnews.com/best-graduate-schools/top-science-schools/george-mason-university-232186,64,2.9,915.0
+Iowa State University,Ames,IA,https://www.usnews.com/best-graduate-schools/top-science-schools/iowa-state-university-153603,64,2.9,818.0
+Rensselaer Polytechnic Institute,Troy,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/rensselaer-polytechnic-institute-194824,64,2.9,1158.0
+University of Oregon,Eugene,OR,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-oregon-209551,64,2.9,2634.0
+University of Texas--Dallas,Richardson,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/the-university-of-texas-at-dallas-228787,64,2.9,752.0
+Georgetown University,Washington,DC,https://www.usnews.com/best-graduate-schools/top-science-schools/georgetown-university-131496,70,2.8,2716.0
+George Washington University,Washington,DC,https://www.usnews.com/best-graduate-schools/top-science-schools/george-washington-university-131469,70,2.8,1103.0
+Oregon State University,Corvallis,OR,https://www.usnews.com/best-graduate-schools/top-science-schools/oregon-state-university-209542,70,2.8,2592.0
+Rochester Institute of Technology,Rochester,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/rochester-institute-of-technology-195003,70,2.8,746.0
+University of Central Florida,Orlando,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-central-florida-132903,70,2.8,2613.0
+University of Delaware,Newark,DE,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-delaware-130943,70,2.8,903.0
+William & Mary,Williamsburg,VA,https://www.usnews.com/best-graduate-schools/top-science-schools/college-of-william-and-mary-231624,70,2.8,
+Case Western Reserve University,Cleveland,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/case-western-reserve-university-201645,77,2.7,820.0
+Colorado School of Mines,Golden,CO,https://www.usnews.com/best-graduate-schools/top-science-schools/colorado-school-of-mines-126775,77,2.7,2696.0
+Florida State University,Tallahassee,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/florida-state-university-134097,77,2.7,2572.0
+Stevens Institute of Technology,Hoboken,NJ,https://www.usnews.com/best-graduate-schools/top-science-schools/stevens-institute-of-technology-186867,77,2.7,2600.0
+Syracuse University,Syracuse,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/syracuse-university-196413,77,2.7,705.0
+Toyota Technological Institute at Chicago,Chicago,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/toyota-technological-institute-at-chicago-445054,77,2.7,
+University of Connecticut,Storrs,CT,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-connecticut-129020,77,2.7,1104.0
+University of Iowa,Iowa City,IA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-iowa-153658,77,2.7,1859.0
+University of Maryland--Baltimore County,Baltimore,MD,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-maryland-baltimore-county-163268,77,2.7,2621.0
+Auburn University,Auburn,AL,https://www.usnews.com/best-graduate-schools/top-science-schools/auburn-university-100858,86,2.6,867.0
+Clemson University,Clemson,SC,https://www.usnews.com/best-graduate-schools/top-science-schools/clemson-university-217882,86,2.6,865.0
+Drexel University,Philadelphia,PA,https://www.usnews.com/best-graduate-schools/top-science-schools/drexel-university-212054,86,2.6,2571.0
+Lehigh University,Bethlehem,PA,https://www.usnews.com/best-graduate-schools/top-science-schools/lehigh-university-213543,86,2.6,2579.0
+New Jersey Institute of Technology,Newark,NJ,https://www.usnews.com/best-graduate-schools/top-science-schools/new-jersey-institute-of-technology-185828,86,2.6,863.0
+University of Georgia,Athens,GA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-georgia-139959,86,2.6,2814.0
+University of Nebraska--Lincoln,Lincoln,NE,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-nebraska-lincoln-181464,86,2.6,2628.0
+University of Tennessee--Knoxville,Knoxville,TN,https://www.usnews.com/best-graduate-schools/top-science-schools/the-university-of-tennessee-221759,86,2.6,2642.0
+Washington State University,Pullman,WA,https://www.usnews.com/best-graduate-schools/top-science-schools/washington-state-university-236939,86,2.6,2651.0
+Worcester Polytechnic Institute,Worcester,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/worcester-polytechnic-institute-168421,86,2.6,2655.0
+Binghamton University--SUNY,Binghamton,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/binghamton-university-suny-196079,96,2.5,
+Colorado State University,Fort Collins,CO,https://www.usnews.com/best-graduate-schools/top-science-schools/colorado-state-university-126818,96,2.5,2570.0
+Illinois Institute of Technology,Chicago,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/illinois-institute-of-technology-145725,96,2.5,1043.0
+Naval Postgraduate School,Monterey,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/naval-postgraduate-school-119678,96,2.5,
+"Rutgers, The State University of New Jersey--Newark",Newark,NJ,https://www.usnews.com/best-graduate-schools/top-science-schools/rutgers-university-186399,96,2.5,
+Temple University,Philadelphia,PA,https://www.usnews.com/best-graduate-schools/top-science-schools/temple-university-216339,96,2.5,2601.0
+University of California--Merced,Merced,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-california-merced-445188,96,2.5,2810.0
+University of North Carolina--Charlotte,Charlotte,NC,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-north-carolina-at-charlotte-199139,96,2.5,860.0
+University of Texas--Arlington,Arlington,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/the-university-of-texas-at-arlington-228769,96,2.5,824.0
+University of Alabama,Tuscaloosa,AL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-alabama-100751,105,2.4,2799.0
+University of Kansas,Lawrence,KS,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-kansas-155317,105,2.4,2618.0
+University of Kentucky,Lexington,KY,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-kentucky-157085,105,2.4,2619.0
+University of New Mexico,Albuquerque,NM,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-new-mexico-main-campus-187985,105,2.4,2827.0
+University of South Florida,Tampa,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-south-florida-137351,105,2.4,2640.0
+Brandeis University,Waltham,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/brandeis-university-165015,110,2.3,2669.0
+Florida International University,Miami,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/florida-international-university-133951,110,2.3,3025.0
+Georgia State University,Atlanta,GA,https://www.usnews.com/best-graduate-schools/top-science-schools/georgia-state-university-139940,110,2.3,2573.0
+Indiana University--Indianapolis,Indianapolis,IN,https://www.usnews.com/best-graduate-schools/top-science-schools/indiana-university-indianapolis-151111,110,2.3,
+Kansas State University,Manhattan,KS,https://www.usnews.com/best-graduate-schools/top-science-schools/kansas-state-university-155399,110,2.3,2577.0
+University of Cincinnati,Cincinnati,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-cincinnati-201885,110,2.3,743.0
+University of Houston,Houston,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-houston-225511,110,2.3,2617.0
+University of Missouri,Columbia,MO,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-missouri-columbia-178396,110,2.3,2625.0
+University of South Carolina,Columbia,SC,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-south-carolina-218663,110,2.3,2639.0
+Wayne State University,Detroit,MI,https://www.usnews.com/best-graduate-schools/top-science-schools/wayne-state-university-172644,110,2.3,2653.0
+Brigham Young University,Provo,UT,https://www.usnews.com/best-graduate-schools/top-science-schools/brigham-young-university-230038,120,2.2,2566.0
+CUNY Graduate School and University Center,New York ,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/cuny-graduate-school-and-university-center-190576,120,2.2,
+Howard University,Washington,DC,https://www.usnews.com/best-graduate-schools/top-science-schools/howard-university-131520,120,2.2,2575.0
+Louisiana State University--Baton Rouge,Baton Rouge,LA,https://www.usnews.com/best-graduate-schools/top-science-schools/louisiana-state-university-and-agricultural--mechanical-college-159391,120,2.2,2580.0
+University at Albany--SUNY,Albany,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/suny-at-albany-196060,120,2.2,
+University of Hawaii--Manoa,Honolulu,HI,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-hawaii-manoa-141574,120,2.2,2616.0
+University of Massachusetts--Boston,Boston,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-massachusetts-boston-166638,120,2.2,2819.0
+University of Massachusetts--Lowell,Lowell,MA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-massachusetts-lowell-166513,120,2.2,2622.0
+University of New Hampshire,Durham,NH,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-new-hampshire-183044,120,2.2,2631.0
+University of Oklahoma,Norman,OK,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-oklahoma-tulsa-207500,120,2.2,2633.0
+University of Texas--San Antonio,San Antonio,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/the-university-of-texas-at-san-antonio-229027,120,2.2,2644.0
+Utah State University,Logan,UT,https://www.usnews.com/best-graduate-schools/top-science-schools/utah-state-university-cehs-230728,120,2.2,2648.0
+Air Force Institute of Technology,WPAFB,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/air-force-institute-of-technology-graduate-school-of-engineering--management-200697,132,2.1,4516.0
+Michigan Technological University,Houghton,MI,https://www.usnews.com/best-graduate-schools/top-science-schools/michigan-technological-university-171128,132,2.1,1857.0
+Mississippi State University,Mississippi State,MS,https://www.usnews.com/best-graduate-schools/top-science-schools/mississippi-state-university-176080,132,2.1,2582.0
+Missouri University of Science & Technology,Rolla,MO,https://www.usnews.com/best-graduate-schools/top-science-schools/missouri-university-of-science--technology-178411,132,2.1,2583.0
+New Mexico State University,Las Cruces,NM,https://www.usnews.com/best-graduate-schools/top-science-schools/new-mexico-state-university-main-campus-188030,132,2.1,2586.0
+Ohio University,Athens,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/ohio-university-204857,132,2.1,2589.0
+Portland State University,Portland,OR,https://www.usnews.com/best-graduate-schools/top-science-schools/portland-state-university-209807,132,2.1,2593.0
+SMU,Dallas,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/southern-methodist-university-228246,132,2.1,
+University of Alabama at Birmingham,Birmingham,AL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-alabama-at-birmingham-100663,132,2.1,2609.0
+University of Arkansas--Fayetteville,Fayetteville,AR,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-arkansas-106397,132,2.1,
+University of Colorado--Colorado Springs,Colorado Springs,CO,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-colorado-colorado-springs-126580,132,2.1,2614.0
+University of Louisville,Louisville,KY,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-louisville-157289,132,2.1,2620.0
+University of Miami,Coral Gables,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-miami-135726,132,2.1,2625.0
+University of Mississippi,University,MS,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-mississippi-main-campus-176017,132,2.1,2626.0
+University of North Texas,Denton,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-north-texas-227216,132,2.1,2832.0
+West Virginia University,Morgantown,WV,https://www.usnews.com/best-graduate-schools/top-science-schools/west-virginia-university-238032,132,2.1,2859.0
+Boise State University,,ID,https://www.usnews.com/best-graduate-schools/top-science-schools/boise-state-university-142115,148,2.0,2665.0
+DePaul University,Chicago,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/depaul-university-144740,148,2.0,2700.0
+Florida Atlantic University,Boca Raton,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/florida-atlantic-university-133669,148,2.0,2710.0
+Florida Institute of Technology,Melbourne,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/florida-institute-of-technology-133881,148,2.0,2711.0
+Kent State University,Kent,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/kent-state-university-kent-campus-203517,148,2.0,2578.0
+Oklahoma State University,Stillwater,OK,https://www.usnews.com/best-graduate-schools/top-science-schools/oklahoma-state-university-main-campus-207388,148,2.0,2762.0
+Old Dominion University,Norfolk,VA,https://www.usnews.com/best-graduate-schools/top-science-schools/old-dominion-university-232982,148,2.0,2590.0
+Texas Tech University,Lubbock,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/texas-tech-university-229115,148,2.0,2602.0
+University of Louisiana--Lafayette,Lafayette,LA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-louisiana-at-lafayette-160658,148,2.0,2641.0
+University of Maine,Orono,ME,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-maine-161253,148,2.0,2801.0
+University of Nevada--Las Vegas,Las Vegas,NV,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-nevada-las-vegas-182281,148,2.0,2629.0
+University of Rhode Island,Kingston,RI,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-rhode-island-217484,148,2.0,2637.0
+University of Vermont,Burlington,VT,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-vermont-231174,148,2.0,2603.0
+University of Wisconsin--Milwaukee,Milwaukee,WI,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-wisconsin-milwaukee-240453,148,2.0,2848.0
+Virginia Commonwealth University,Richmond,VA,https://www.usnews.com/best-graduate-schools/top-science-schools/virginia-commonwealth-university-234030,148,2.0,2650.0
+Montana State University,Bozeman,MT,https://www.usnews.com/best-graduate-schools/top-science-schools/montana-state-university-180461,163,1.9,3154.0
+North Carolina A&T State University,Greensboro,NC,https://www.usnews.com/best-graduate-schools/top-science-schools/north-carolina-a&t-state-university-199102,163,1.9,729.0
+Oregon Health and Science University,Portland,OR,https://www.usnews.com/best-graduate-schools/top-science-schools/oregon-health-and-science-university-209490,163,1.9,2591.0
+Santa Clara University,,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/santa-clara-university-122931,163,1.9,2596.0
+University of Alabama--Huntsville,Huntsville,AL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-alabama-in-huntsville-100706,163,1.9,2610.0
+University of Colorado--Denver,Denver,CO,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-colorado-denver-126562,163,1.9,2812.0
+University of Idaho,Moscow,ID,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-idaho-142285,163,1.9,1099.0
+University of Memphis,Memphis,TN,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-memphis-220862,163,1.9,2624.0
+University of Missouri--Kansas City,Kansas City,MO,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-missouri-kansas-city-178402,163,1.9,2822.0
+University of Nebraska--Omaha,Omaha,NE,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-nebraska-at-omaha-181394,163,1.9,2825.0
+University of Texas--El Paso,El Paso,TX,https://www.usnews.com/best-graduate-schools/top-science-schools/the-university-of-texas-at-el-paso-228796,163,1.9,2643.0
+University of Wyoming,Laramie,WY,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-wyoming-240727,163,1.9,2850.0
+Wright State University,Dayton,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/wright-state-university-206604,163,1.9,2656.0
+Embry-Riddle Aeronautical University -- Daytona Beach,,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/embry-riddle-aeronautical-university---daytona-beach-133553,176,1.8,
+Marquette University,Milwaukee,WI,https://www.usnews.com/best-graduate-schools/top-science-schools/marquette-university-239105,176,1.8,2581.0
+New Mexico Institute of Mining and Technology,Socorro,NM,https://www.usnews.com/best-graduate-schools/top-science-schools/new-mexico-institute-of-mining-and-technology-187967,176,1.8,2585.0
+North Dakota State University,Fargo,ND,https://www.usnews.com/best-graduate-schools/top-science-schools/north-dakota-state-university-200332,176,1.8,2753.0
+Southern Illinois University--Carbondale,Carbondale,IL,https://www.usnews.com/best-graduate-schools/top-science-schools/southern-illinois-university-carbondale-149222,176,1.8,2597.0
+Towson University,Towson,MD,https://www.usnews.com/best-graduate-schools/top-science-schools/towson-university-164076,176,1.8,2803.0
+University of Arkansas--Little Rock,Little Rock,AR,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-arkansas-at-little-rock-106245,176,1.8,2807.0
+University of Michigan--Dearborn,Dearborn,MI,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-michigan-dearborn-171137,176,1.8,2820.0
+University of Nevada--Reno,Reno,NV,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-nevada-reno-182290,176,1.8,2630.0
+University of Tulsa,Tulsa,OK,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-tulsa-207971,176,1.8,2646.0
+Wichita State University,Wichita,KS,https://www.usnews.com/best-graduate-schools/top-science-schools/wichita-state-university-156125,176,1.8,2864.0
+Bowie State University,Bowie,MD,https://www.usnews.com/best-graduate-schools/top-science-schools/bowie-state-university-162007,187,1.7,2666.0
+Clarkson University,,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/clarkson-university-190044,187,1.7,2568.0
+Dakota State University,Madison,SD,https://www.usnews.com/best-graduate-schools/top-science-schools/dakota-state-university-219082,187,1.7,2698.0
+Kennesaw State University,,GA,https://www.usnews.com/best-graduate-schools/top-science-schools/kennesaw-state-university-486840,187,1.7,2728.0
+Louisiana Tech University,Ruston,LA,https://www.usnews.com/best-graduate-schools/top-science-schools/louisiana-tech-university-159647,187,1.7,2735.0
+Northern Arizona University,,AZ,https://www.usnews.com/best-graduate-schools/top-science-schools/northern-arizona-university-105330,187,1.7,3169.0
+Tennessee State University,Nashville,TN,https://www.usnews.com/best-graduate-schools/top-science-schools/tennessee-state-university-221838,187,1.7,4509.0
+University of Denver,,CO,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-denver-127060,187,1.7,2813.0
+University of Puerto Rico--Mayaguez,Mayaguez,PR,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-puerto-rico-mayaguez-243197,187,1.7,
+University of Toledo,Toledo,OH,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-toledo-206084,187,1.7,2645.0
+Western Michigan University,Kalamazoo,MI,https://www.usnews.com/best-graduate-schools/top-science-schools/western-michigan-university-172699,187,1.7,2862.0
+Claremont Graduate University,Claremont,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/claremont-graduate-university-112251,198,1.6,3147.0
+Oakland University,Rochester,MI,https://www.usnews.com/best-graduate-schools/top-science-schools/oakland-university-171571,198,1.6,2760.0
+Pace University,New York,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/pace-university-194310,198,1.6,2763.0
+Tennessee Technological University,Cookeville,TN,https://www.usnews.com/best-graduate-schools/top-science-schools/tennessee-technological-university-221847,198,1.6,2793.0
+University of Bridgeport,Bridgeport,CT,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-bridgeport-128744,198,1.6,2809.0
+University of New Orleans,New Orleans,LA,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-new-orleans-159939,198,1.6,2828.0
+University of Southern Mississippi,Hattiesburg,MS,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-southern-mississippi-176372,198,1.6,2802.0
+Chapman University,Orange,CA,https://www.usnews.com/best-graduate-schools/top-science-schools/chapman-university-111948,205,1.5,3692.0
+LIU Post,Brookville,NY,https://www.usnews.com/best-graduate-schools/top-science-schools/long-island-university-192448,205,1.5,
+Nova Southeastern University,Fort Lauderdale,FL,https://www.usnews.com/best-graduate-schools/top-science-schools/nova-southeastern-university-136215,205,1.5,2759.0
+The Catholic University of America,Washington,DC,https://www.usnews.com/best-graduate-schools/top-science-schools/the-catholic-university-of-america-131283,205,1.5,2686.0
+University of South Alabama,,AL,https://www.usnews.com/best-graduate-schools/top-science-schools/university-of-south-alabama-102094,205,1.5,3034.0
+Walden University,Minneapolis,MN,https://www.usnews.com/best-graduate-schools/top-science-schools/walden-university-125231,205,1.5,2657.0
