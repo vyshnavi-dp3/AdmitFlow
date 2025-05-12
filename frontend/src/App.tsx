@@ -12,8 +12,28 @@ interface University {
   parent_course_name: string;
 }
 
+interface SOPAnalysis {
+  score: number;
+  strengths: string[];
+  weaknesses: string[];
+  suggestions: string[];
+  summary: string;
+  keywords?: string[];
+}
+
+interface LORAnalysis {
+  score: number;
+  strengths: string[];
+  weaknesses: string[];
+  suggestions: string[];
+  summary: string;
+  recommenderCredibility?: number;
+}
+
 interface PredictionResult {
   probability: number;
+  sopAnalysis: SOPAnalysis;
+  lorAnalysis: LORAnalysis;
   trainingRecords: Array<{
     gre: number;
     eng: number;
@@ -53,7 +73,9 @@ function App() {
           workExpMonths: formData.workExpMonths,
           sopScore: formData.sopScore,
           lorScore: formData.lorScore,
-          noOfPapers: formData.noOfPapers
+          noOfPapers: formData.noOfPapers,
+          sopAnalysis: formData.sopAnalysis,
+          lorAnalysis: formData.lorAnalysis
         }),
       });
 
@@ -63,7 +85,26 @@ function App() {
         throw new Error(data.error || 'Failed to get prediction');
       }
 
-      setPredictionResult(data.data);
+      setPredictionResult({
+        probability: data.data.probability,
+        sopAnalysis: data.data.sopAnalysis || {
+          score: formData.sopScore,
+          strengths: [],
+          weaknesses: [],
+          suggestions: [],
+          summary: '',
+          keywords: []
+        },
+        lorAnalysis: data.data.lorAnalysis || {
+          score: formData.lorScore,
+          strengths: [],
+          weaknesses: [],
+          suggestions: [],
+          summary: '',
+          recommenderCredibility: 0
+        },
+        trainingRecords: data.data.trainingRecords
+      });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to get prediction');
     } finally {

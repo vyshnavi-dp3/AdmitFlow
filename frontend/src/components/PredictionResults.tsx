@@ -14,6 +14,7 @@ import {
   Tooltip,
   Legend
 } from 'chart.js';
+import './PredictionResults.css';
 
 // Register Chart.js components
 Chart.register(
@@ -29,8 +30,28 @@ Chart.register(
   Legend
 );
 
+interface SOPAnalysis {
+  score: number;
+  strengths: string[];
+  weaknesses: string[];
+  suggestions: string[];
+  summary: string;
+  keywords?: string[];
+}
+
+interface LORAnalysis {
+  score: number;
+  strengths: string[];
+  weaknesses: string[];
+  suggestions: string[];
+  summary: string;
+  recommenderCredibility?: number;
+}
+
 interface PredictionResult {
   probability: number;
+  sopAnalysis: SOPAnalysis;
+  lorAnalysis: LORAnalysis;
   trainingRecords: Array<{
     gre: number;
     eng: number;
@@ -390,192 +411,217 @@ const PredictionResults: React.FC<PredictionResultsProps> = ({ result, universit
   const insights = calculateInsights();
 
   return (
-    <div className="results-container">
+    <div className="prediction-results">
       <div className="results-header">
-        <h2>Prediction Results for {universityName}</h2>
+        <button onClick={onBack} className="back-button">
+          ← Back to Search
+        </button>
+        <h2>{universityName}</h2>
       </div>
-      
-      <div className="results-content">
-        {/* Top Section - Probability and Stats */}
-        <div className="top-section">
-          {/* Admission Probability */}
-          <div className="probability-section">
-            <h3>Your Admission Probability</h3>
-            <div className="probability-circle">
-              <span className="probability-value">
-                {(result.probability * 100).toFixed(2)}%
-              </span>
+
+      <div className="results-grid">
+        {/* Left Column - Main Analysis */}
+        <div className="main-analysis">
+          <div className="probability-card">
+            <h3>Admission Probability</h3>
+            <div className={`probability-value ${result.probability < 0.4 ? 'low' : result.probability < 0.7 ? 'medium' : 'high'}`}>
+              {(result.probability * 100).toFixed(1)}%
             </div>
           </div>
 
-          {/* Key Statistics */}
-          <div className="stats-section">
-            <h3>Key Statistics</h3>
+          {/* SOP Analysis Card */}
+          <div className="analysis-card sop-analysis">
+            <h3>Statement of Purpose Analysis</h3>
+            <div className="score-section">
+              <div className="score-label">SOP Score:</div>
+              <div className={`score-value ${result.sopAnalysis.score < 4 ? 'low' : result.sopAnalysis.score < 7 ? 'medium' : 'high'}`}>
+                {result.sopAnalysis.score.toFixed(1)}/10
+              </div>
+            </div>
+            <div className="analysis-section">
+              <div className="summary-section">
+                <h4>Summary</h4>
+                <p>{result.sopAnalysis.summary}</p>
+              </div>
+              <div className="analysis-grid">
+                <div className="analysis-column">
+                  <h4>Strengths</h4>
+                  <ul className="strength-list">
+                    {result.sopAnalysis.strengths.map((strength, index) => (
+                      <li key={`strength-${index}`}>{strength}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="analysis-column">
+                  <h4>Areas for Improvement</h4>
+                  <ul className="weakness-list">
+                    {result.sopAnalysis.weaknesses.map((weakness, index) => (
+                      <li key={`weakness-${index}`}>{weakness}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="suggestions-section">
+                <h4>Suggestions for Improvement</h4>
+                <ul className="suggestion-list">
+                  {result.sopAnalysis.suggestions.map((suggestion, index) => (
+                    <li key={`suggestion-${index}`}>{suggestion}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* LOR Analysis Card */}
+          <div className="analysis-card lor-analysis">
+            <h3>Letter of Recommendation Analysis</h3>
+            <div className="score-section">
+              <div className="score-label">LOR Score:</div>
+              <div className={`score-value ${result.lorAnalysis.score < 4 ? 'low' : result.lorAnalysis.score < 7 ? 'medium' : 'high'}`}>
+                {result.lorAnalysis.score.toFixed(1)}/10
+              </div>
+            </div>
+            <div className="analysis-section">
+              <div className="summary-section">
+                <h4>Summary</h4>
+                <p>{result.lorAnalysis.summary}</p>
+              </div>
+              <div className="analysis-grid">
+                <div className="analysis-column">
+                  <h4>Strengths</h4>
+                  <ul className="strength-list">
+                    {result.lorAnalysis.strengths.map((strength, index) => (
+                      <li key={`lor-strength-${index}`}>{strength}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="analysis-column">
+                  <h4>Areas for Improvement</h4>
+                  <ul className="weakness-list">
+                    {result.lorAnalysis.weaknesses.map((weakness, index) => (
+                      <li key={`lor-weakness-${index}`}>{weakness}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="suggestions-section">
+                <h4>Suggestions for Improvement</h4>
+                <ul className="suggestion-list">
+                  {result.lorAnalysis.suggestions.map((suggestion, index) => (
+                    <li key={`lor-suggestion-${index}`}>{suggestion}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column - Historical Data */}
+        <div className="historical-data">
+          <div className="analysis-card stats-card">
+            <h3>Application Statistics</h3>
             <div className="stats-grid">
-              <div className="stat-card">
-                <h4>Total Applications</h4>
-                <span>{totalCount}</span>
+              <div className="stat-item">
+                <span className="stat-label">Total Applications</span>
+                <span className="stat-value">{result.trainingRecords.length}</span>
               </div>
-              <div className="stat-card">
-                <h4>Admission Rate</h4>
-                <span>
-                  {((admittedCount / totalCount) * 100).toFixed(1)}%
+              <div className="stat-item">
+                <span className="stat-label">Acceptance Rate</span>
+                <span className="stat-value">
+                  {((result.trainingRecords.filter(r => r.admit === 1).length / result.trainingRecords.length) * 100).toFixed(1)}%
                 </span>
               </div>
-              <div className="stat-card">
-                <h4>Average GRE</h4>
-                <span>
-                  {averageGre.toFixed(1)}
+              <div className="stat-item">
+                <span className="stat-label">Avg GRE Score</span>
+                <span className="stat-value">
+                  {(result.trainingRecords.reduce((acc, curr) => acc + curr.gre, 0) / result.trainingRecords.length).toFixed(0)}
                 </span>
               </div>
-              <div className="stat-card">
-                <h4>Average English</h4>
-                <span>
-                  {averageEng.toFixed(1)}
+              <div className="stat-item">
+                <span className="stat-label">Avg Experience</span>
+                <span className="stat-value">
+                  {(result.trainingRecords.reduce((acc, curr) => acc + curr.exp, 0) / result.trainingRecords.length).toFixed(1)} months
                 </span>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Analytics Section - University Summary */}
-        <div className="analytics-section">
-          <h3>University Summary</h3>
-          <div className="analytics-grid">
-            <div className="analytics-card">
-              <h4>GRE Score Distribution</h4>
-              <div className="chart-container">
-                <canvas ref={greDistributionRef}></canvas>
+          <div className="analysis-card recent-decisions">
+            <h3>Recent Decisions</h3>
+            <div className="decisions-grid">
+              <div className="decisions-column">
+                <h4>Recent Admits</h4>
+                {result.trainingRecords
+                  .filter(r => r.admit === 1)
+                  .slice(-3)
+                  .map((record, index) => (
+                    <div key={`admit-${index}`} className="decision-card admit">
+                      <div className="decision-stats">
+                        <div className="stat-row">
+                          <span>GRE:</span>
+                          <strong>{record.gre}</strong>
+                        </div>
+                        <div className="stat-row">
+                          <span>English:</span>
+                          <strong>{record.eng}</strong>
+                        </div>
+                        <div className="stat-row">
+                          <span>Experience:</span>
+                          <strong>{record.exp} months</strong>
+                        </div>
+                        <div className="stat-row">
+                          <span>Papers:</span>
+                          <strong>{record.papers}</strong>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
               </div>
-            </div>
-            <div className="analytics-card">
-              <h4>Admission Rate Trend</h4>
-              <div className="chart-container">
-                <canvas ref={admissionTrendRef}></canvas>
-              </div>
-            </div>
-            <div className="analytics-card">
-              <h4>Work Experience Distribution</h4>
-              <div className="chart-container">
-                <canvas ref={experienceChartRef}></canvas>
-              </div>
-            </div>
-            <div className="analytics-card">
-              <h4>Average Scores Comparison</h4>
-              <div className="chart-container">
-                <canvas ref={comparisonChartRef}></canvas>
+              <div className="decisions-column">
+                <h4>Recent Rejects</h4>
+                {result.trainingRecords
+                  .filter(r => r.admit === 0)
+                  .slice(-3)
+                  .map((record, index) => (
+                    <div key={`reject-${index}`} className="decision-card reject">
+                      <div className="decision-stats">
+                        <div className="stat-row">
+                          <span>GRE:</span>
+                          <strong>{record.gre}</strong>
+                        </div>
+                        <div className="stat-row">
+                          <span>English:</span>
+                          <strong>{record.eng}</strong>
+                        </div>
+                        <div className="stat-row">
+                          <span>Experience:</span>
+                          <strong>{record.exp} months</strong>
+                        </div>
+                        <div className="stat-row">
+                          <span>Papers:</span>
+                          <strong>{record.papers}</strong>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
-        </div>
 
-        {/* University Insights Section */}
-        <div className="insights-section">
-          <h3>University Insights</h3>
-          <div className="insights-grid">
-            <div className="insight-card">
-              <h4>
-                <span className="insight-icon">📊</span>
-                GRE Score Impact
-              </h4>
-              <p>
-                Admitted students typically score {Math.abs(insights.greDifference).toFixed(1)} points 
-                {insights.greDifference > 0 ? ' higher' : ' lower'} on the GRE compared to rejected applicants. 
-                The average GRE score for admitted students is {insights.avgGreAdmitted.toFixed(1)}.
-              </p>
+          <div className="charts-container">
+            <div className="chart-wrapper">
+              <canvas ref={greDistributionRef}></canvas>
             </div>
-
-            <div className="insight-card">
-              <h4>
-                <span className="insight-icon">💼</span>
-                Work Experience
-              </h4>
-              <p>
-                Successful applicants have {Math.abs(insights.expDifference).toFixed(1)} months 
-                {insights.expDifference > 0 ? ' more' : ' less'} work experience on average. 
-                The typical admitted student has {insights.avgExpAdmitted.toFixed(1)} months of experience.
-              </p>
+            <div className="chart-wrapper">
+              <canvas ref={admissionTrendRef}></canvas>
             </div>
-
-            <div className="insight-card">
-              <h4>
-                <span className="insight-icon">📚</span>
-                Research Experience
-              </h4>
-              <p>
-                Admitted students have {Math.abs(insights.papersDifference).toFixed(1)} 
-                {insights.papersDifference > 0 ? ' more' : ' fewer'} research papers on average. 
-                Successful applicants typically have {insights.avgPapersAdmitted.toFixed(1)} papers.
-              </p>
+            <div className="chart-wrapper">
+              <canvas ref={experienceChartRef}></canvas>
+            </div>
+            <div className="chart-wrapper">
+              <canvas ref={comparisonChartRef}></canvas>
             </div>
           </div>
-        </div>
-
-        {/* History Section - Recent Admits and Rejects */}
-        <div className="history-section">
-          <div className="history-column">
-            <h3>Recent Admits</h3>
-            <div className="history-cards">
-              {recentAdmits.map((record, index) => (
-                <div key={`admit-${index}`} className="history-card admit">
-                  <div className="card-header">Admitted Student</div>
-                  <div className="card-content">
-                    <div className="card-stat">
-                      <span className="label">GRE:</span>
-                      <span className="value">{record.gre}</span>
-                    </div>
-                    <div className="card-stat">
-                      <span className="label">English:</span>
-                      <span className="value">{record.eng}</span>
-                    </div>
-                    <div className="card-stat">
-                      <span className="label">Experience:</span>
-                      <span className="value">{record.exp} months</span>
-                    </div>
-                    <div className="card-stat">
-                      <span className="label">Papers:</span>
-                      <span className="value">{record.papers}</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="history-column">
-            <h3>Recent Rejects</h3>
-            <div className="history-cards">
-              {recentRejects.map((record, index) => (
-                <div key={`reject-${index}`} className="history-card reject">
-                  <div className="card-header">Rejected Student</div>
-                  <div className="card-content">
-                    <div className="card-stat">
-                      <span className="label">GRE:</span>
-                      <span className="value">{record.gre}</span>
-                    </div>
-                    <div className="card-stat">
-                      <span className="label">English:</span>
-                      <span className="value">{record.eng}</span>
-                    </div>
-                    <div className="card-stat">
-                      <span className="label">Experience:</span>
-                      <span className="value">{record.exp} months</span>
-                    </div>
-                    <div className="card-stat">
-                      <span className="label">Papers:</span>
-                      <span className="value">{record.papers}</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="results-footer">
-          <button className="back-button" onClick={onBack}>
-            Back to Search
-          </button>
         </div>
       </div>
     </div>

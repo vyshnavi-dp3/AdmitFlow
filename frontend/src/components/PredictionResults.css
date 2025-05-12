@@ -1,0 +1,296 @@
+.prediction-results {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+}
+
+.main-analysis {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.historical-data {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.probability-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.probability-card h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.probability-value {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.probability-value.low { color: #dc3545; }
+.probability-value.medium { color: #ffc107; }
+.probability-value.high { color: #28a745; }
+
+.analysis-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-card h3 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.score-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.score-label {
+  font-weight: 500;
+  margin-right: 1rem;
+  color: #666;
+}
+
+.score-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.score-value.low { color: #dc3545; }
+.score-value.medium { color: #ffc107; }
+.score-value.high { color: #28a745; }
+
+.summary-section {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.summary-section h4 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.summary-section p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.analysis-column h4 {
+  margin: 0 0 1rem 0;
+  color: #444;
+}
+
+.strength-list, .weakness-list, .suggestion-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.strength-list li, .weakness-list li, .suggestion-list li {
+  padding: 0.75rem 0;
+  color: #555;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.strength-list li:before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.weakness-list li:before {
+  content: "!";
+  color: #dc3545;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.suggestion-list li:before {
+  content: "→";
+  color: #0066cc;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+.suggestions-section {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.suggestions-section h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.stat-item {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.decisions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.decision-card {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.decision-card.admit {
+  border-left: 4px solid #28a745;
+}
+
+.decision-card.reject {
+  border-left: 4px solid #dc3545;
+}
+
+.decision-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.stat-row span {
+  color: #666;
+}
+
+.stat-row strong {
+  color: #333;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.chart-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .historical-data {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .prediction-results {
+    padding: 1rem;
+  }
+  
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .probability-value {
+    font-size: 2rem;
+  }
+  
+  .score-value {
+    font-size: 1.25rem;
+  }
+} 

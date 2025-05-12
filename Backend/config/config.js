@@ -7,5 +7,6 @@ module.exports = {
     DIALECT: 'mysql',
     PORT: '3306',
   },
-  PORT: 5001,
+  PORT: 3020,
+
 };
