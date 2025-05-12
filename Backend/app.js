@@ -4,7 +4,14 @@ const config = require("./config/config");
 const app = express();
 const db = require('./models');
 
-app.use(cors());
+// Configure CORS with specific options
+app.use(cors({
+  origin: 'http://localhost:3000', // Allow requests from frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow specific methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
+  credentials: true // Allow credentials
+}));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

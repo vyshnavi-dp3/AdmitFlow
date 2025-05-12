@@ -12,7 +12,9 @@ router.post('/', async (req, res) => {
     workExpMonths,
     sopScore,
     lorScore,
-    noOfPapers
+    noOfPapers,
+    lorAnalysis,
+    sopAnalysis
   } = req.body;
 
   // Validate fields
@@ -46,6 +48,8 @@ router.post('/', async (req, res) => {
       lorScore,
       noOfPapers
     });
+    prediction.sopAnalysis = sopAnalysis;
+    prediction.lorAnalysis = lorAnalysis;
     return res.status(200).json({ success: true, data: prediction });
   } catch (err) {
     console.error('Prediction error:', err);
