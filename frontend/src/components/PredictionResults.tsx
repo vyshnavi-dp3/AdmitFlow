@@ -422,6 +422,58 @@ const PredictionResults: React.FC<PredictionResultsProps> = ({ result, universit
       <div className="results-grid">
         {/* Left Column - Main Analysis */}
         <div className="main-analysis">
+          {/* University Summary Card */}
+          <div className="university-summary">
+            <h3>University Overview</h3>
+            <div className="university-info-grid">
+              <div className="university-info-item">
+                <span className="info-label">Location</span>
+                <span className="info-value">Stanford, CA</span>
+              </div>
+              <div className="university-info-item">
+                <span className="info-label">Program Type</span>
+                <span className="info-value">Masters in Computer Science</span>
+              </div>
+              <div className="university-info-item">
+                <span className="info-label">Duration</span>
+                <span className="info-value">2 Years</span>
+              </div>
+            </div>
+
+            <div className="university-stats">
+              <div className="stat-box">
+                <span className="stat-box-label">Acceptance Rate</span>
+                <span className="stat-box-value">5.2%</span>
+              </div>
+              <div className="stat-box">
+                <span className="stat-box-label">Avg GRE Score</span>
+                <span className="stat-box-value">325</span>
+              </div>
+              <div className="stat-box">
+                <span className="stat-box-label">Avg GPA</span>
+                <span className="stat-box-value">3.8</span>
+              </div>
+              <div className="stat-box">
+                <span className="stat-box-label">Class Size</span>
+                <span className="stat-box-value">120</span>
+              </div>
+            </div>
+
+            <div className="university-description">
+              <p>
+                Stanford University's Computer Science program is renowned for its cutting-edge research and innovative curriculum. 
+                The program emphasizes both theoretical foundations and practical applications, preparing students for leadership roles 
+                in technology and research.
+              </p>
+              <div className="highlight-tags">
+                <span className="highlight-tag">Top 5 CS Program</span>
+                <span className="highlight-tag">Research Focus</span>
+                <span className="highlight-tag">Silicon Valley Location</span>
+                <span className="highlight-tag">Industry Connections</span>
+              </div>
+            </div>
+          </div>
+
           <div className="probability-card">
             <h3>Admission Probability</h3>
             <div className={`probability-value ${result.probability < 0.4 ? 'low' : result.probability < 0.7 ? 'medium' : 'high'}`}>
@@ -514,38 +566,8 @@ const PredictionResults: React.FC<PredictionResultsProps> = ({ result, universit
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Right Column - Historical Data */}
-        <div className="historical-data">
-          <div className="analysis-card stats-card">
-            <h3>Application Statistics</h3>
-            <div className="stats-grid">
-              <div className="stat-item">
-                <span className="stat-label">Total Applications</span>
-                <span className="stat-value">{result.trainingRecords.length}</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-label">Acceptance Rate</span>
-                <span className="stat-value">
-                  {((result.trainingRecords.filter(r => r.admit === 1).length / result.trainingRecords.length) * 100).toFixed(1)}%
-                </span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-label">Avg GRE Score</span>
-                <span className="stat-value">
-                  {(result.trainingRecords.reduce((acc, curr) => acc + curr.gre, 0) / result.trainingRecords.length).toFixed(0)}
-                </span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-label">Avg Experience</span>
-                <span className="stat-value">
-                  {(result.trainingRecords.reduce((acc, curr) => acc + curr.exp, 0) / result.trainingRecords.length).toFixed(1)} months
-                </span>
-              </div>
-            </div>
-          </div>
-
+          {/* Recent Decisions Card - Moved here */}
           <div className="analysis-card recent-decisions">
             <h3>Recent Decisions</h3>
             <div className="decisions-grid">
@@ -604,6 +626,37 @@ const PredictionResults: React.FC<PredictionResultsProps> = ({ result, universit
                       </div>
                     </div>
                   ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column - Historical Data */}
+        <div className="historical-data">
+          <div className="analysis-card stats-card">
+            <h3>Application Statistics</h3>
+            <div className="stats-grid">
+              <div className="stat-item">
+                <span className="stat-label">Total Applications</span>
+                <span className="stat-value">{result.trainingRecords.length}</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-label">Acceptance Rate</span>
+                <span className="stat-value">
+                  {((result.trainingRecords.filter(r => r.admit === 1).length / result.trainingRecords.length) * 100).toFixed(1)}%
+                </span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-label">Avg GRE Score</span>
+                <span className="stat-value">
+                  {(result.trainingRecords.reduce((acc, curr) => acc + curr.gre, 0) / result.trainingRecords.length).toFixed(0)}
+                </span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-label">Avg Experience</span>
+                <span className="stat-value">
+                  {(result.trainingRecords.reduce((acc, curr) => acc + curr.exp, 0) / result.trainingRecords.length).toFixed(1)} months
+                </span>
               </div>
             </div>
           </div>
